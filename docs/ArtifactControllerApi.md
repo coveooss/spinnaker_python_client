@@ -1,4 +1,4 @@
-# spinnaker-python-client.ArtifactControllerApi
+# spinnaker_client.ArtifactControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -18,12 +18,12 @@ Retrieve the list of artifact accounts configured in Clouddriver.
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.ArtifactControllerApi()
+api_instance = spinnaker_client.ArtifactControllerApi()
 x_rate_limit_app = 'x_rate_limit_app_example' # str | X-RateLimit-App (optional)
 
 try:
@@ -64,12 +64,12 @@ Retrieve the list of artifact versions by account and artifact names
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.ArtifactControllerApi()
+api_instance = spinnaker_client.ArtifactControllerApi()
 account_name = 'account_name_example' # str | accountName
 artifact_name = 'artifact_name_example' # str | artifactName
 type = 'type_example' # str | type
@@ -116,12 +116,12 @@ Retrieve the specified artifact version for an artifact provider and package nam
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.ArtifactControllerApi()
+api_instance = spinnaker_client.ArtifactControllerApi()
 package_name = 'package_name_example' # str | packageName
 provider = 'provider_example' # str | provider
 version = 'version_example' # str | version

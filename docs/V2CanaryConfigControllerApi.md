@@ -1,4 +1,4 @@
-# spinnaker-python-client.V2CanaryConfigControllerApi
+# spinnaker_client.V2CanaryConfigControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -20,12 +20,12 @@ Create a canary configuration
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.V2CanaryConfigControllerApi()
+api_instance = spinnaker_client.V2CanaryConfigControllerApi()
 config = NULL # object | config
 configuration_account_name = 'configuration_account_name_example' # str | configurationAccountName (optional)
 
@@ -68,12 +68,12 @@ Delete a canary configuration
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.V2CanaryConfigControllerApi()
+api_instance = spinnaker_client.V2CanaryConfigControllerApi()
 id = 'id_example' # str | id
 configuration_account_name = 'configuration_account_name_example' # str | configurationAccountName (optional)
 
@@ -115,12 +115,12 @@ Retrieve a canary configuration by id
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.V2CanaryConfigControllerApi()
+api_instance = spinnaker_client.V2CanaryConfigControllerApi()
 id = 'id_example' # str | id
 configuration_account_name = 'configuration_account_name_example' # str | configurationAccountName (optional)
 
@@ -163,12 +163,12 @@ Retrieve a list of canary configurations
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.V2CanaryConfigControllerApi()
+api_instance = spinnaker_client.V2CanaryConfigControllerApi()
 application = 'application_example' # str | application (optional)
 configuration_account_name = 'configuration_account_name_example' # str | configurationAccountName (optional)
 
@@ -211,12 +211,12 @@ Update a canary configuration
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.V2CanaryConfigControllerApi()
+api_instance = spinnaker_client.V2CanaryConfigControllerApi()
 config = NULL # object | config
 id = 'id_example' # str | id
 configuration_account_name = 'configuration_account_name_example' # str | configurationAccountName (optional)

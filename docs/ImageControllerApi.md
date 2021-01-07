@@ -1,4 +1,4 @@
-# spinnaker-python-client.ImageControllerApi
+# spinnaker_client.ImageControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -20,12 +20,12 @@ The query parameter `q` filters the list of images by image name
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.ImageControllerApi()
+api_instance = spinnaker_client.ImageControllerApi()
 account = 'account_example' # str | account (optional)
 count = 56 # int | count (optional)
 provider = 'aws' # str | provider (optional) (default to aws)
@@ -74,12 +74,12 @@ Find tags
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.ImageControllerApi()
+api_instance = spinnaker_client.ImageControllerApi()
 account = 'account_example' # str | account
 repository = 'repository_example' # str | repository
 x_rate_limit_app = 'x_rate_limit_app_example' # str | X-RateLimit-App (optional)
@@ -126,12 +126,12 @@ Get image details
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.ImageControllerApi()
+api_instance = spinnaker_client.ImageControllerApi()
 account = 'account_example' # str | account
 image_id = 'image_id_example' # str | imageId
 region = 'region_example' # str | region

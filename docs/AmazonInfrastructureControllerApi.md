@@ -1,4 +1,4 @@
-# spinnaker-python-client.AmazonInfrastructureControllerApi
+# spinnaker_client.AmazonInfrastructureControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -20,12 +20,12 @@ Get application functions
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.AmazonInfrastructureControllerApi()
+api_instance = spinnaker_client.AmazonInfrastructureControllerApi()
 application = 'application_example' # str | application
 
 try:
@@ -66,12 +66,12 @@ Get functions
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.AmazonInfrastructureControllerApi()
+api_instance = spinnaker_client.AmazonInfrastructureControllerApi()
 account = 'account_example' # str | account (optional)
 function_name = 'function_name_example' # str | functionName (optional)
 region = 'region_example' # str | region (optional)
@@ -116,12 +116,12 @@ Get instance types
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.AmazonInfrastructureControllerApi()
+api_instance = spinnaker_client.AmazonInfrastructureControllerApi()
 
 try:
     # Get instance types
@@ -158,12 +158,12 @@ Get subnets
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.AmazonInfrastructureControllerApi()
+api_instance = spinnaker_client.AmazonInfrastructureControllerApi()
 
 try:
     # Get subnets
@@ -200,12 +200,12 @@ Get VPCs
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.AmazonInfrastructureControllerApi()
+api_instance = spinnaker_client.AmazonInfrastructureControllerApi()
 
 try:
     # Get VPCs

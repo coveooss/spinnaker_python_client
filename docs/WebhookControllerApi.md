@@ -1,4 +1,4 @@
-# spinnaker-python-client.WebhookControllerApi
+# spinnaker_client.WebhookControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -17,12 +17,12 @@ Retrieve a list of preconfigured webhooks in Orca
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.WebhookControllerApi()
+api_instance = spinnaker_client.WebhookControllerApi()
 
 try:
     # Retrieve a list of preconfigured webhooks in Orca
@@ -59,12 +59,12 @@ Endpoint for posting webhooks to Spinnaker's webhook service
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.WebhookControllerApi()
+api_instance = spinnaker_client.WebhookControllerApi()
 source = 'source_example' # str | source
 type = 'type_example' # str | type
 x_event_key = 'x_event_key_example' # str | X-Event-Key (optional)

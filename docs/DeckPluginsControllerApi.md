@@ -1,4 +1,4 @@
-# spinnaker-python-client.DeckPluginsControllerApi
+# spinnaker_client.DeckPluginsControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -17,12 +17,12 @@ Retrieve a single plugin asset by version
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.DeckPluginsControllerApi()
+api_instance = spinnaker_client.DeckPluginsControllerApi()
 asset = 'asset_example' # str | asset
 plugin_id = 'plugin_id_example' # str | pluginId
 plugin_version = 'plugin_version_example' # str | pluginVersion
@@ -67,12 +67,12 @@ Retrieve a plugin manifest
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.DeckPluginsControllerApi()
+api_instance = spinnaker_client.DeckPluginsControllerApi()
 
 try:
     # Retrieve a plugin manifest

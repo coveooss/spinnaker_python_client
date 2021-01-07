@@ -1,4 +1,4 @@
-# spinnaker-python-client.PubsubSubscriptionControllerApi
+# spinnaker_client.PubsubSubscriptionControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -16,12 +16,12 @@ Retrieve the list of pub/sub subscriptions configured in Echo.
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.PubsubSubscriptionControllerApi()
+api_instance = spinnaker_client.PubsubSubscriptionControllerApi()
 
 try:
     # Retrieve the list of pub/sub subscriptions configured in Echo.

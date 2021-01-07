@@ -1,4 +1,4 @@
-# spinnaker-python-client.PipelineConfigControllerApi
+# spinnaker_client.PipelineConfigControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -18,12 +18,12 @@ Convert a pipeline config to a pipeline template.
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.PipelineConfigControllerApi()
+api_instance = spinnaker_client.PipelineConfigControllerApi()
 pipeline_config_id = 'pipeline_config_id_example' # str | pipelineConfigId
 
 try:
@@ -64,12 +64,12 @@ Get all pipeline configs.
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.PipelineConfigControllerApi()
+api_instance = spinnaker_client.PipelineConfigControllerApi()
 
 try:
     # Get all pipeline configs.
@@ -106,12 +106,12 @@ Get pipeline config history.
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.PipelineConfigControllerApi()
+api_instance = spinnaker_client.PipelineConfigControllerApi()
 pipeline_config_id = 'pipeline_config_id_example' # str | pipelineConfigId
 limit = 20 # int | limit (optional) (default to 20)
 

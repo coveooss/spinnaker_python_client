@@ -1,4 +1,4 @@
-# spinnaker-python-client.ConcourseControllerApi
+# spinnaker_client.ConcourseControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -18,12 +18,12 @@ Retrieve the list of job names for a given pipeline available to triggers
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.ConcourseControllerApi()
+api_instance = spinnaker_client.ConcourseControllerApi()
 build_master = 'build_master_example' # str | buildMaster
 pipeline = 'pipeline_example' # str | pipeline
 team = 'team_example' # str | team
@@ -68,12 +68,12 @@ Retrieve the list of pipeline names for a given team available to triggers
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.ConcourseControllerApi()
+api_instance = spinnaker_client.ConcourseControllerApi()
 build_master = 'build_master_example' # str | buildMaster
 team = 'team_example' # str | team
 
@@ -116,12 +116,12 @@ Retrieve the list of resource names for a given pipeline available to the Concou
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.ConcourseControllerApi()
+api_instance = spinnaker_client.ConcourseControllerApi()
 build_master = 'build_master_example' # str | buildMaster
 pipeline = 'pipeline_example' # str | pipeline
 team = 'team_example' # str | team

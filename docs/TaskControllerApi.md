@@ -1,4 +1,4 @@
-# spinnaker-python-client.TaskControllerApi
+# spinnaker_client.TaskControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -21,12 +21,12 @@ Cancel task
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.TaskControllerApi()
+api_instance = spinnaker_client.TaskControllerApi()
 id = 'id_example' # str | id
 
 try:
@@ -67,12 +67,12 @@ Cancel tasks
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.TaskControllerApi()
+api_instance = spinnaker_client.TaskControllerApi()
 ids = ['ids_example'] # list[str] | ids
 
 try:
@@ -113,12 +113,12 @@ Delete task
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.TaskControllerApi()
+api_instance = spinnaker_client.TaskControllerApi()
 id = 'id_example' # str | id
 
 try:
@@ -159,12 +159,12 @@ Get task details
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.TaskControllerApi()
+api_instance = spinnaker_client.TaskControllerApi()
 id = 'id_example' # str | id
 task_details_id = 'task_details_id_example' # str | taskDetailsId
 x_rate_limit_app = 'x_rate_limit_app_example' # str | X-RateLimit-App (optional)
@@ -209,12 +209,12 @@ Get task
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.TaskControllerApi()
+api_instance = spinnaker_client.TaskControllerApi()
 id = 'id_example' # str | id
 
 try:
@@ -255,12 +255,12 @@ Create task
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.TaskControllerApi()
+api_instance = spinnaker_client.TaskControllerApi()
 map = NULL # object | map
 
 try:

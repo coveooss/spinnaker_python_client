@@ -1,4 +1,4 @@
-# spinnaker-python-client.BuildControllerApi
+# spinnaker_client.BuildControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -27,12 +27,12 @@ Deprecated, use the v3 endpoint instead
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.BuildControllerApi()
+api_instance = spinnaker_client.BuildControllerApi()
 type = 'type_example' # str | type (optional)
 
 try:
@@ -75,12 +75,12 @@ Deprecated, use the v3 endpoint instead
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.BuildControllerApi()
+api_instance = spinnaker_client.BuildControllerApi()
 build_master = 'build_master_example' # str | buildMaster
 number = 'number_example' # str | number
 
@@ -125,12 +125,12 @@ Deprecated, use the v3 endpoint instead
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.BuildControllerApi()
+api_instance = spinnaker_client.BuildControllerApi()
 build_master = 'build_master_example' # str | buildMaster
 
 try:
@@ -173,12 +173,12 @@ Deprecated, use the v3 endpoint instead
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.BuildControllerApi()
+api_instance = spinnaker_client.BuildControllerApi()
 build_master = 'build_master_example' # str | buildMaster
 
 try:
@@ -221,12 +221,12 @@ Deprecated, use the v3 endpoint instead
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.BuildControllerApi()
+api_instance = spinnaker_client.BuildControllerApi()
 build_master = 'build_master_example' # str | buildMaster
 
 try:
@@ -267,12 +267,12 @@ Get build masters
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.BuildControllerApi()
+api_instance = spinnaker_client.BuildControllerApi()
 type = 'type_example' # str | type (optional)
 
 try:
@@ -313,12 +313,12 @@ Get build for build master
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.BuildControllerApi()
+api_instance = spinnaker_client.BuildControllerApi()
 build_master = 'build_master_example' # str | buildMaster
 job = 'job_example' # str | job
 number = 'number_example' # str | number
@@ -363,12 +363,12 @@ Get builds for build master
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.BuildControllerApi()
+api_instance = spinnaker_client.BuildControllerApi()
 build_master = 'build_master_example' # str | buildMaster
 job = 'job_example' # str | job
 
@@ -411,12 +411,12 @@ Get job config
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.BuildControllerApi()
+api_instance = spinnaker_client.BuildControllerApi()
 build_master = 'build_master_example' # str | buildMaster
 job = 'job_example' # str | job
 
@@ -459,12 +459,12 @@ Get jobs for build master
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.BuildControllerApi()
+api_instance = spinnaker_client.BuildControllerApi()
 build_master = 'build_master_example' # str | buildMaster
 
 try:

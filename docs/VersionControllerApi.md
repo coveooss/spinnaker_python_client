@@ -1,4 +1,4 @@
-# spinnaker-python-client.VersionControllerApi
+# spinnaker_client.VersionControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -16,12 +16,12 @@ Fetch Gate's current version
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.VersionControllerApi()
+api_instance = spinnaker_client.VersionControllerApi()
 
 try:
     # Fetch Gate's current version

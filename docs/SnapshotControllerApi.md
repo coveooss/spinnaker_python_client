@@ -1,4 +1,4 @@
-# spinnaker-python-client.SnapshotControllerApi
+# spinnaker_client.SnapshotControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -17,12 +17,12 @@ Get current snapshot
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.SnapshotControllerApi()
+api_instance = spinnaker_client.SnapshotControllerApi()
 account = 'account_example' # str | account
 application = 'application_example' # str | application
 
@@ -65,12 +65,12 @@ Get snapshot history
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.SnapshotControllerApi()
+api_instance = spinnaker_client.SnapshotControllerApi()
 account = 'account_example' # str | account
 application = 'application_example' # str | application
 limit = 20 # int | limit (optional) (default to 20)

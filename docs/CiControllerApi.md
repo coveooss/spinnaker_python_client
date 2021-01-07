@@ -1,4 +1,4 @@
-# spinnaker-python-client.CiControllerApi
+# spinnaker_client.CiControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -17,12 +17,12 @@ getBuildOutputById
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.CiControllerApi()
+api_instance = spinnaker_client.CiControllerApi()
 build_id = 'build_id_example' # str | buildId
 
 try:
@@ -63,12 +63,12 @@ getBuilds
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.CiControllerApi()
+api_instance = spinnaker_client.CiControllerApi()
 build_number = 'build_number_example' # str | buildNumber (optional)
 commit_id = 'commit_id_example' # str | commitId (optional)
 completion_status = 'completion_status_example' # str | completionStatus (optional)

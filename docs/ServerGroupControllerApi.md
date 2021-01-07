@@ -1,4 +1,4 @@
-# spinnaker-python-client.ServerGroupControllerApi
+# spinnaker_client.ServerGroupControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -17,12 +17,12 @@ Retrieve a server group's details
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.ServerGroupControllerApi()
+api_instance = spinnaker_client.ServerGroupControllerApi()
 account = 'account_example' # str | account
 application_name = 'application_name_example' # str | applicationName
 region = 'region_example' # str | region
@@ -73,12 +73,12 @@ Retrieve a list of server groups for a given application
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.ServerGroupControllerApi()
+api_instance = spinnaker_client.ServerGroupControllerApi()
 application_name = 'application_name_example' # str | applicationName
 x_rate_limit_app = 'x_rate_limit_app_example' # str | X-RateLimit-App (optional)
 cloud_provider = 'cloud_provider_example' # str | cloudProvider (optional)

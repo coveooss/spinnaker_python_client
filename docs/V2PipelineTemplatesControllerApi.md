@@ -1,4 +1,4 @@
-# spinnaker-python-client.V2PipelineTemplatesControllerApi
+# spinnaker_client.V2PipelineTemplatesControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -23,12 +23,12 @@ Method | HTTP request | Description
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.V2PipelineTemplatesControllerApi()
+api_instance = spinnaker_client.V2PipelineTemplatesControllerApi()
 pipeline_template = NULL # object | pipelineTemplate
 tag = 'tag_example' # str | tag (optional)
 
@@ -71,12 +71,12 @@ Delete a pipeline template.
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.V2PipelineTemplatesControllerApi()
+api_instance = spinnaker_client.V2PipelineTemplatesControllerApi()
 id = 'id_example' # str | id
 application = 'application_example' # str | application (optional)
 digest = 'digest_example' # str | digest (optional)
@@ -123,12 +123,12 @@ No authorization required
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.V2PipelineTemplatesControllerApi()
+api_instance = spinnaker_client.V2PipelineTemplatesControllerApi()
 id = 'id_example' # str | id
 digest = 'digest_example' # str | digest (optional)
 tag = 'tag_example' # str | tag (optional)
@@ -173,12 +173,12 @@ No authorization required
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.V2PipelineTemplatesControllerApi()
+api_instance = spinnaker_client.V2PipelineTemplatesControllerApi()
 id = 'id_example' # str | id
 
 try:
@@ -219,12 +219,12 @@ No authorization required
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.V2PipelineTemplatesControllerApi()
+api_instance = spinnaker_client.V2PipelineTemplatesControllerApi()
 scopes = ['scopes_example'] # list[str] | scopes (optional)
 
 try:
@@ -265,12 +265,12 @@ List pipeline templates with versions
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.V2PipelineTemplatesControllerApi()
+api_instance = spinnaker_client.V2PipelineTemplatesControllerApi()
 scopes = ['scopes_example'] # list[str] | scopes (optional)
 
 try:
@@ -311,12 +311,12 @@ No authorization required
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.V2PipelineTemplatesControllerApi()
+api_instance = spinnaker_client.V2PipelineTemplatesControllerApi()
 pipeline = NULL # object | pipeline
 
 try:
@@ -357,12 +357,12 @@ No authorization required
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.V2PipelineTemplatesControllerApi()
+api_instance = spinnaker_client.V2PipelineTemplatesControllerApi()
 id = 'id_example' # str | id
 pipeline_template = NULL # object | pipelineTemplate
 skip_plan_dependents = false # bool | skipPlanDependents (optional) (default to false)

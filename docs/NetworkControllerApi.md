@@ -1,4 +1,4 @@
-# spinnaker-python-client.NetworkControllerApi
+# spinnaker_client.NetworkControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -17,12 +17,12 @@ Retrieve a list of networks for a given cloud provider
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.NetworkControllerApi()
+api_instance = spinnaker_client.NetworkControllerApi()
 cloud_provider = 'cloud_provider_example' # str | cloudProvider
 x_rate_limit_app = 'x_rate_limit_app_example' # str | X-RateLimit-App (optional)
 
@@ -65,12 +65,12 @@ Retrieve a list of networks, grouped by cloud provider
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.NetworkControllerApi()
+api_instance = spinnaker_client.NetworkControllerApi()
 x_rate_limit_app = 'x_rate_limit_app_example' # str | X-RateLimit-App (optional)
 
 try:

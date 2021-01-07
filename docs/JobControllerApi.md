@@ -1,4 +1,4 @@
-# spinnaker-python-client.JobControllerApi
+# spinnaker_client.JobControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -16,12 +16,12 @@ Get job
 ```python
 from __future__ import print_function
 import time
-import spinnaker-python-client
-from spinnaker-python-client.rest import ApiException
+import spinnaker_client
+from spinnaker_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker-python-client.JobControllerApi()
+api_instance = spinnaker_client.JobControllerApi()
 account = 'account_example' # str | account
 application_name = 'application_name_example' # str | applicationName
 name = 'name_example' # str | name
