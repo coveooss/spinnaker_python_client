@@ -1,4 +1,4 @@
-# swagger_client.PipelineTemplatesControllerApi
+# spinnaker-python-client.PipelineTemplatesControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -22,12 +22,12 @@ Create a pipeline template.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineTemplatesControllerApi()
+api_instance = spinnaker-python-client.PipelineTemplatesControllerApi()
 pipeline_template = NULL # object | pipelineTemplate
 
 try:
@@ -67,12 +67,12 @@ Delete a pipeline template.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineTemplatesControllerApi()
+api_instance = spinnaker-python-client.PipelineTemplatesControllerApi()
 id = 'id_example' # str | id
 application = 'application_example' # str | application (optional)
 
@@ -101,7 +101,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -115,12 +115,12 @@ Get a pipeline template.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineTemplatesControllerApi()
+api_instance = spinnaker-python-client.PipelineTemplatesControllerApi()
 id = 'id_example' # str | id
 
 try:
@@ -147,7 +147,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -161,12 +161,12 @@ List all pipelines that implement a pipeline template
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineTemplatesControllerApi()
+api_instance = spinnaker-python-client.PipelineTemplatesControllerApi()
 id = 'id_example' # str | id
 recursive = true # bool | recursive (optional)
 
@@ -195,7 +195,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -209,12 +209,12 @@ List pipeline templates.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineTemplatesControllerApi()
+api_instance = spinnaker-python-client.PipelineTemplatesControllerApi()
 scopes = ['scopes_example'] # list[str] | scopes (optional)
 
 try:
@@ -241,7 +241,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -255,12 +255,12 @@ Resolve a pipeline template.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineTemplatesControllerApi()
+api_instance = spinnaker-python-client.PipelineTemplatesControllerApi()
 source = 'source_example' # str | source
 execution_id = 'execution_id_example' # str | executionId (optional)
 pipeline_config_id = 'pipeline_config_id_example' # str | pipelineConfigId (optional)
@@ -291,7 +291,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -305,12 +305,12 @@ Update a pipeline template.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineTemplatesControllerApi()
+api_instance = spinnaker-python-client.PipelineTemplatesControllerApi()
 id = 'id_example' # str | id
 pipeline_template = NULL # object | pipelineTemplate
 skip_plan_dependents = false # bool | skipPlanDependents (optional) (default to false)

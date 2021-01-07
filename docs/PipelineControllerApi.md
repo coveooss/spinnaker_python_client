@@ -1,4 +1,4 @@
-# swagger_client.PipelineControllerApi
+# spinnaker-python-client.PipelineControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -7,14 +7,10 @@ Method | HTTP request | Description
 [**cancel_pipeline_using_put1**](PipelineControllerApi.md#cancel_pipeline_using_put1) | **PUT** /pipelines/{id}/cancel | Cancel a pipeline execution
 [**delete_pipeline_using_delete**](PipelineControllerApi.md#delete_pipeline_using_delete) | **DELETE** /pipelines/{application}/{pipelineName} | Delete a pipeline definition
 [**delete_pipeline_using_delete1**](PipelineControllerApi.md#delete_pipeline_using_delete1) | **DELETE** /pipelines/{id} | Delete a pipeline execution
-[**evaluate_expression_for_execution_using_delete**](PipelineControllerApi.md#evaluate_expression_for_execution_using_delete) | **DELETE** /pipelines/{id}/evaluateExpression | Evaluate a pipeline expression using the provided execution as context
+[**evaluate_expression_for_execution_at_stage_using_get**](PipelineControllerApi.md#evaluate_expression_for_execution_at_stage_using_get) | **GET** /pipelines/{id}/{stageId}/evaluateExpression | Evaluate a pipeline expression at a specific stage using the provided execution as context
 [**evaluate_expression_for_execution_using_get**](PipelineControllerApi.md#evaluate_expression_for_execution_using_get) | **GET** /pipelines/{id}/evaluateExpression | Evaluate a pipeline expression using the provided execution as context
-[**evaluate_expression_for_execution_using_head**](PipelineControllerApi.md#evaluate_expression_for_execution_using_head) | **HEAD** /pipelines/{id}/evaluateExpression | Evaluate a pipeline expression using the provided execution as context
-[**evaluate_expression_for_execution_using_options**](PipelineControllerApi.md#evaluate_expression_for_execution_using_options) | **OPTIONS** /pipelines/{id}/evaluateExpression | Evaluate a pipeline expression using the provided execution as context
-[**evaluate_expression_for_execution_using_patch**](PipelineControllerApi.md#evaluate_expression_for_execution_using_patch) | **PATCH** /pipelines/{id}/evaluateExpression | Evaluate a pipeline expression using the provided execution as context
-[**evaluate_expression_for_execution_using_post**](PipelineControllerApi.md#evaluate_expression_for_execution_using_post) | **POST** /pipelines/{id}/evaluateExpression | Evaluate a pipeline expression using the provided execution as context
-[**evaluate_expression_for_execution_using_put**](PipelineControllerApi.md#evaluate_expression_for_execution_using_put) | **PUT** /pipelines/{id}/evaluateExpression | Evaluate a pipeline expression using the provided execution as context
-[**get_pipeline_logs_using_get**](PipelineControllerApi.md#get_pipeline_logs_using_get) | **GET** /pipelines/{id}/logs | Retrieve pipeline execution logs
+[**evaluate_expression_for_execution_via_post_using_post1**](PipelineControllerApi.md#evaluate_expression_for_execution_via_post_using_post1) | **POST** /pipelines/{id}/evaluateExpression | Evaluate a pipeline expression using the provided execution as context
+[**evaluate_variables_using_post**](PipelineControllerApi.md#evaluate_variables_using_post) | **POST** /pipelines/{id}/evaluateVariables | Evaluate variables same as Evaluate Variables stage using the provided execution as context
 [**get_pipeline_using_get**](PipelineControllerApi.md#get_pipeline_using_get) | **GET** /pipelines/{id} | Retrieve a pipeline execution
 [**invoke_pipeline_config_using_post1**](PipelineControllerApi.md#invoke_pipeline_config_using_post1) | **POST** /pipelines/{application}/{pipelineNameOrId} | Trigger a pipeline execution
 [**invoke_pipeline_config_via_echo_using_post**](PipelineControllerApi.md#invoke_pipeline_config_via_echo_using_post) | **POST** /pipelines/v2/{application}/{pipelineNameOrId} | Trigger a pipeline execution
@@ -29,7 +25,7 @@ Method | HTTP request | Description
 
 
 # **cancel_pipeline_using_put1**
-> cancel_pipeline_using_put1(id, reason=reason, force=force)
+> cancel_pipeline_using_put1(id, force=force, reason=reason)
 
 Cancel a pipeline execution
 
@@ -37,19 +33,19 @@ Cancel a pipeline execution
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineControllerApi()
+api_instance = spinnaker-python-client.PipelineControllerApi()
 id = 'id_example' # str | id
-reason = 'reason_example' # str | reason (optional)
 force = false # bool | force (optional) (default to false)
+reason = 'reason_example' # str | reason (optional)
 
 try:
     # Cancel a pipeline execution
-    api_instance.cancel_pipeline_using_put1(id, reason=reason, force=force)
+    api_instance.cancel_pipeline_using_put1(id, force=force, reason=reason)
 except ApiException as e:
     print("Exception when calling PipelineControllerApi->cancel_pipeline_using_put1: %s\n" % e)
 ```
@@ -59,8 +55,8 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| id | 
- **reason** | **str**| reason | [optional] 
  **force** | **bool**| force | [optional] [default to false]
+ **reason** | **str**| reason | [optional] 
 
 ### Return type
 
@@ -86,12 +82,12 @@ Delete a pipeline definition
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineControllerApi()
+api_instance = spinnaker-python-client.PipelineControllerApi()
 application = 'application_example' # str | application
 pipeline_name = 'pipeline_name_example' # str | pipelineName
 
@@ -119,7 +115,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -133,12 +129,12 @@ Delete a pipeline execution
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineControllerApi()
+api_instance = spinnaker-python-client.PipelineControllerApi()
 id = 'id_example' # str | id
 
 try:
@@ -165,43 +161,45 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **evaluate_expression_for_execution_using_delete**
-> dict(str, object) evaluate_expression_for_execution_using_delete(id, expression)
+# **evaluate_expression_for_execution_at_stage_using_get**
+> dict(str, object) evaluate_expression_for_execution_at_stage_using_get(expression, id, stage_id)
 
-Evaluate a pipeline expression using the provided execution as context
+Evaluate a pipeline expression at a specific stage using the provided execution as context
 
 ### Example
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineControllerApi()
-id = 'id_example' # str | id
+api_instance = spinnaker-python-client.PipelineControllerApi()
 expression = 'expression_example' # str | expression
+id = 'id_example' # str | id
+stage_id = 'stage_id_example' # str | stageId
 
 try:
-    # Evaluate a pipeline expression using the provided execution as context
-    api_response = api_instance.evaluate_expression_for_execution_using_delete(id, expression)
+    # Evaluate a pipeline expression at a specific stage using the provided execution as context
+    api_response = api_instance.evaluate_expression_for_execution_at_stage_using_get(expression, id, stage_id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling PipelineControllerApi->evaluate_expression_for_execution_using_delete: %s\n" % e)
+    print("Exception when calling PipelineControllerApi->evaluate_expression_for_execution_at_stage_using_get: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **str**| id | 
  **expression** | **str**| expression | 
+ **id** | **str**| id | 
+ **stage_id** | **str**| stageId | 
 
 ### Return type
 
@@ -213,13 +211,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **evaluate_expression_for_execution_using_get**
-> dict(str, object) evaluate_expression_for_execution_using_get(id, expression)
+> dict(str, object) evaluate_expression_for_execution_using_get(expression, id)
 
 Evaluate a pipeline expression using the provided execution as context
 
@@ -227,18 +225,18 @@ Evaluate a pipeline expression using the provided execution as context
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineControllerApi()
-id = 'id_example' # str | id
+api_instance = spinnaker-python-client.PipelineControllerApi()
 expression = 'expression_example' # str | expression
+id = 'id_example' # str | id
 
 try:
     # Evaluate a pipeline expression using the provided execution as context
-    api_response = api_instance.evaluate_expression_for_execution_using_get(id, expression)
+    api_response = api_instance.evaluate_expression_for_execution_using_get(expression, id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PipelineControllerApi->evaluate_expression_for_execution_using_get: %s\n" % e)
@@ -248,8 +246,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **str**| id | 
  **expression** | **str**| expression | 
+ **id** | **str**| id | 
 
 ### Return type
 
@@ -261,13 +259,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **evaluate_expression_for_execution_using_head**
-> dict(str, object) evaluate_expression_for_execution_using_head(id, expression)
+# **evaluate_expression_for_execution_via_post_using_post1**
+> dict(str, object) evaluate_expression_for_execution_via_post_using_post1(id, pipeline_expression)
 
 Evaluate a pipeline expression using the provided execution as context
 
@@ -275,21 +273,21 @@ Evaluate a pipeline expression using the provided execution as context
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineControllerApi()
+api_instance = spinnaker-python-client.PipelineControllerApi()
 id = 'id_example' # str | id
-expression = 'expression_example' # str | expression
+pipeline_expression = NULL # object | pipelineExpression
 
 try:
     # Evaluate a pipeline expression using the provided execution as context
-    api_response = api_instance.evaluate_expression_for_execution_using_head(id, expression)
+    api_response = api_instance.evaluate_expression_for_execution_via_post_using_post1(id, pipeline_expression)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling PipelineControllerApi->evaluate_expression_for_execution_using_head: %s\n" % e)
+    print("Exception when calling PipelineControllerApi->evaluate_expression_for_execution_via_post_using_post1: %s\n" % e)
 ```
 
 ### Parameters
@@ -297,7 +295,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| id | 
- **expression** | **str**| expression | 
+ **pipeline_expression** | **object**| pipelineExpression | 
 
 ### Return type
 
@@ -314,232 +312,46 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **evaluate_expression_for_execution_using_options**
-> dict(str, object) evaluate_expression_for_execution_using_options(id, expression)
+# **evaluate_variables_using_post**
+> dict(str, object) evaluate_variables_using_post(execution_id, expressions, requisite_stage_ref_ids=requisite_stage_ref_ids, spel_version=spel_version)
 
-Evaluate a pipeline expression using the provided execution as context
+Evaluate variables same as Evaluate Variables stage using the provided execution as context
 
 ### Example
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineControllerApi()
-id = 'id_example' # str | id
-expression = 'expression_example' # str | expression
+api_instance = spinnaker-python-client.PipelineControllerApi()
+execution_id = 'execution_id_example' # str | Execution id to run against
+expressions = [spinnaker-python-client.Mapstringstring()] # list[Mapstringstring] | List of variables/expressions to evaluate
+requisite_stage_ref_ids = 'requisite_stage_ref_ids_example' # str | Comma separated list of requisite stage IDs for the evaluation stage (optional)
+spel_version = 'spel_version_example' # str | Version of SpEL evaluation logic to use (v3 or v4) (optional)
 
 try:
-    # Evaluate a pipeline expression using the provided execution as context
-    api_response = api_instance.evaluate_expression_for_execution_using_options(id, expression)
+    # Evaluate variables same as Evaluate Variables stage using the provided execution as context
+    api_response = api_instance.evaluate_variables_using_post(execution_id, expressions, requisite_stage_ref_ids=requisite_stage_ref_ids, spel_version=spel_version)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling PipelineControllerApi->evaluate_expression_for_execution_using_options: %s\n" % e)
+    print("Exception when calling PipelineControllerApi->evaluate_variables_using_post: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **str**| id | 
- **expression** | **str**| expression | 
+ **execution_id** | **str**| Execution id to run against | 
+ **expressions** | [**list[Mapstringstring]**](Mapstringstring.md)| List of variables/expressions to evaluate | 
+ **requisite_stage_ref_ids** | **str**| Comma separated list of requisite stage IDs for the evaluation stage | [optional] 
+ **spel_version** | **str**| Version of SpEL evaluation logic to use (v3 or v4) | [optional] 
 
 ### Return type
 
 **dict(str, object)**
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: */*
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **evaluate_expression_for_execution_using_patch**
-> dict(str, object) evaluate_expression_for_execution_using_patch(id, expression)
-
-Evaluate a pipeline expression using the provided execution as context
-
-### Example
-```python
-from __future__ import print_function
-import time
-import swagger_client
-from swagger_client.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = swagger_client.PipelineControllerApi()
-id = 'id_example' # str | id
-expression = 'expression_example' # str | expression
-
-try:
-    # Evaluate a pipeline expression using the provided execution as context
-    api_response = api_instance.evaluate_expression_for_execution_using_patch(id, expression)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling PipelineControllerApi->evaluate_expression_for_execution_using_patch: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| id | 
- **expression** | **str**| expression | 
-
-### Return type
-
-**dict(str, object)**
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: */*
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **evaluate_expression_for_execution_using_post**
-> dict(str, object) evaluate_expression_for_execution_using_post(id, expression)
-
-Evaluate a pipeline expression using the provided execution as context
-
-### Example
-```python
-from __future__ import print_function
-import time
-import swagger_client
-from swagger_client.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = swagger_client.PipelineControllerApi()
-id = 'id_example' # str | id
-expression = 'expression_example' # str | expression
-
-try:
-    # Evaluate a pipeline expression using the provided execution as context
-    api_response = api_instance.evaluate_expression_for_execution_using_post(id, expression)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling PipelineControllerApi->evaluate_expression_for_execution_using_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| id | 
- **expression** | **str**| expression | 
-
-### Return type
-
-**dict(str, object)**
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: */*
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **evaluate_expression_for_execution_using_put**
-> dict(str, object) evaluate_expression_for_execution_using_put(id, expression)
-
-Evaluate a pipeline expression using the provided execution as context
-
-### Example
-```python
-from __future__ import print_function
-import time
-import swagger_client
-from swagger_client.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = swagger_client.PipelineControllerApi()
-id = 'id_example' # str | id
-expression = 'expression_example' # str | expression
-
-try:
-    # Evaluate a pipeline expression using the provided execution as context
-    api_response = api_instance.evaluate_expression_for_execution_using_put(id, expression)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling PipelineControllerApi->evaluate_expression_for_execution_using_put: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| id | 
- **expression** | **str**| expression | 
-
-### Return type
-
-**dict(str, object)**
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: */*
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **get_pipeline_logs_using_get**
-> list[object] get_pipeline_logs_using_get(id)
-
-Retrieve pipeline execution logs
-
-### Example
-```python
-from __future__ import print_function
-import time
-import swagger_client
-from swagger_client.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = swagger_client.PipelineControllerApi()
-id = 'id_example' # str | id
-
-try:
-    # Retrieve pipeline execution logs
-    api_response = api_instance.get_pipeline_logs_using_get(id)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling PipelineControllerApi->get_pipeline_logs_using_get: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| id | 
-
-### Return type
-
-**list[object]**
 
 ### Authorization
 
@@ -561,12 +373,12 @@ Retrieve a pipeline execution
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineControllerApi()
+api_instance = spinnaker-python-client.PipelineControllerApi()
 id = 'id_example' # str | id
 
 try:
@@ -593,13 +405,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **invoke_pipeline_config_using_post1**
-> HttpEntity invoke_pipeline_config_using_post1(application, pipeline_name_or_id, trigger=trigger)
+> invoke_pipeline_config_using_post1(application, pipeline_name_or_id, trigger=trigger)
 
 Trigger a pipeline execution
 
@@ -607,20 +419,19 @@ Trigger a pipeline execution
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineControllerApi()
+api_instance = spinnaker-python-client.PipelineControllerApi()
 application = 'application_example' # str | application
 pipeline_name_or_id = 'pipeline_name_or_id_example' # str | pipelineNameOrId
 trigger = NULL # object | trigger (optional)
 
 try:
     # Trigger a pipeline execution
-    api_response = api_instance.invoke_pipeline_config_using_post1(application, pipeline_name_or_id, trigger=trigger)
-    pprint(api_response)
+    api_instance.invoke_pipeline_config_using_post1(application, pipeline_name_or_id, trigger=trigger)
 except ApiException as e:
     print("Exception when calling PipelineControllerApi->invoke_pipeline_config_using_post1: %s\n" % e)
 ```
@@ -635,7 +446,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HttpEntity**](HttpEntity.md)
+void (empty response body)
 
 ### Authorization
 
@@ -649,7 +460,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **invoke_pipeline_config_via_echo_using_post**
-> HttpEntity invoke_pipeline_config_via_echo_using_post(application, pipeline_name_or_id, trigger=trigger)
+> object invoke_pipeline_config_via_echo_using_post(application, pipeline_name_or_id, trigger=trigger)
 
 Trigger a pipeline execution
 
@@ -657,12 +468,12 @@ Trigger a pipeline execution
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineControllerApi()
+api_instance = spinnaker-python-client.PipelineControllerApi()
 application = 'application_example' # str | application
 pipeline_name_or_id = 'pipeline_name_or_id_example' # str | pipelineNameOrId
 trigger = NULL # object | trigger (optional)
@@ -685,7 +496,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**HttpEntity**](HttpEntity.md)
+**object**
 
 ### Authorization
 
@@ -707,12 +518,12 @@ Pause a pipeline execution
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineControllerApi()
+api_instance = spinnaker-python-client.PipelineControllerApi()
 id = 'id_example' # str | id
 
 try:
@@ -752,12 +563,12 @@ Rename a pipeline definition
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineControllerApi()
+api_instance = spinnaker-python-client.PipelineControllerApi()
 rename_command = NULL # object | renameCommand
 
 try:
@@ -789,7 +600,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **restart_stage_using_put**
-> dict(str, object) restart_stage_using_put(id, stage_id, context)
+> dict(str, object) restart_stage_using_put(context, id, stage_id)
 
 Restart a stage execution
 
@@ -797,19 +608,19 @@ Restart a stage execution
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineControllerApi()
+api_instance = spinnaker-python-client.PipelineControllerApi()
+context = NULL # object | context
 id = 'id_example' # str | id
 stage_id = 'stage_id_example' # str | stageId
-context = NULL # object | context
 
 try:
     # Restart a stage execution
-    api_response = api_instance.restart_stage_using_put(id, stage_id, context)
+    api_response = api_instance.restart_stage_using_put(context, id, stage_id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PipelineControllerApi->restart_stage_using_put: %s\n" % e)
@@ -819,9 +630,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **context** | **object**| context | 
  **id** | **str**| id | 
  **stage_id** | **str**| stageId | 
- **context** | **object**| context | 
 
 ### Return type
 
@@ -847,12 +658,12 @@ Resume a pipeline execution
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineControllerApi()
+api_instance = spinnaker-python-client.PipelineControllerApi()
 id = 'id_example' # str | id
 
 try:
@@ -885,7 +696,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **save_pipeline_using_post**
-> save_pipeline_using_post(pipeline)
+> save_pipeline_using_post(pipeline, stale_check=stale_check)
 
 Save a pipeline definition
 
@@ -893,17 +704,18 @@ Save a pipeline definition
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineControllerApi()
+api_instance = spinnaker-python-client.PipelineControllerApi()
 pipeline = NULL # object | pipeline
+stale_check = false # bool | staleCheck (optional) (default to false)
 
 try:
     # Save a pipeline definition
-    api_instance.save_pipeline_using_post(pipeline)
+    api_instance.save_pipeline_using_post(pipeline, stale_check=stale_check)
 except ApiException as e:
     print("Exception when calling PipelineControllerApi->save_pipeline_using_post: %s\n" % e)
 ```
@@ -913,6 +725,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **pipeline** | **object**| pipeline | 
+ **stale_check** | **bool**| staleCheck | [optional] [default to false]
 
 ### Return type
 
@@ -938,12 +751,12 @@ Initiate a pipeline execution
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineControllerApi()
+api_instance = spinnaker-python-client.PipelineControllerApi()
 map = NULL # object | map
 
 try:
@@ -984,12 +797,12 @@ Update a pipeline definition
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineControllerApi()
+api_instance = spinnaker-python-client.PipelineControllerApi()
 id = 'id_example' # str | id
 pipeline = NULL # object | pipeline
 
@@ -1024,7 +837,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_stage_using_patch**
-> dict(str, object) update_stage_using_patch(id, stage_id, context)
+> dict(str, object) update_stage_using_patch(context, id, stage_id)
 
 Update a stage execution
 
@@ -1032,19 +845,19 @@ Update a stage execution
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineControllerApi()
+api_instance = spinnaker-python-client.PipelineControllerApi()
+context = NULL # object | context
 id = 'id_example' # str | id
 stage_id = 'stage_id_example' # str | stageId
-context = NULL # object | context
 
 try:
     # Update a stage execution
-    api_response = api_instance.update_stage_using_patch(id, stage_id, context)
+    api_response = api_instance.update_stage_using_patch(context, id, stage_id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PipelineControllerApi->update_stage_using_patch: %s\n" % e)
@@ -1054,9 +867,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **context** | **object**| context | 
  **id** | **str**| id | 
  **stage_id** | **str**| stageId | 
- **context** | **object**| context | 
 
 ### Return type
 

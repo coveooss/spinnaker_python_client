@@ -15,16 +15,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.auth_controller_api import AuthControllerApi  # noqa: E501
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.api.auth_controller_api import AuthControllerApi  # noqa: E501
+from spinnaker-python-client.rest import ApiException
 
 
 class TestAuthControllerApi(unittest.TestCase):
     """AuthControllerApi unit test stubs"""
 
     def setUp(self):
-        self.api = swagger_client.api.auth_controller_api.AuthControllerApi()  # noqa: E501
+        self.api = spinnaker-python-client.api.auth_controller_api.AuthControllerApi()  # noqa: E501
 
     def tearDown(self):
         pass

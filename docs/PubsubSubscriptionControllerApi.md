@@ -1,4 +1,4 @@
-# swagger_client.PubsubSubscriptionControllerApi
+# spinnaker-python-client.PubsubSubscriptionControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -16,12 +16,12 @@ Retrieve the list of pub/sub subscriptions configured in Echo.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PubsubSubscriptionControllerApi()
+api_instance = spinnaker-python-client.PubsubSubscriptionControllerApi()
 
 try:
     # Retrieve the list of pub/sub subscriptions configured in Echo.
@@ -44,7 +44,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

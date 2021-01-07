@@ -1,4 +1,4 @@
-# swagger_client.EcsServerGroupEventsControllerApi
+# spinnaker-python-client.EcsServerGroupEventsControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **get_events_using_get**
-> list[object] get_events_using_get(application, account, server_group_name, region, provider)
+> list[object] get_events_using_get(account, application, provider, region, server_group_name)
 
 Retrieves a list of events for a server group
 
@@ -16,21 +16,21 @@ Retrieves a list of events for a server group
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.EcsServerGroupEventsControllerApi()
-application = 'application_example' # str | application
+api_instance = spinnaker-python-client.EcsServerGroupEventsControllerApi()
 account = 'account_example' # str | account
-server_group_name = 'server_group_name_example' # str | serverGroupName
-region = 'region_example' # str | region
+application = 'application_example' # str | application
 provider = 'provider_example' # str | provider
+region = 'region_example' # str | region
+server_group_name = 'server_group_name_example' # str | serverGroupName
 
 try:
     # Retrieves a list of events for a server group
-    api_response = api_instance.get_events_using_get(application, account, server_group_name, region, provider)
+    api_response = api_instance.get_events_using_get(account, application, provider, region, server_group_name)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling EcsServerGroupEventsControllerApi->get_events_using_get: %s\n" % e)
@@ -40,11 +40,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **application** | **str**| application | 
  **account** | **str**| account | 
- **server_group_name** | **str**| serverGroupName | 
- **region** | **str**| region | 
+ **application** | **str**| application | 
  **provider** | **str**| provider | 
+ **region** | **str**| region | 
+ **server_group_name** | **str**| serverGroupName | 
 
 ### Return type
 
@@ -56,7 +56,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

@@ -15,16 +15,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.ecs_server_group_events_controller_api import EcsServerGroupEventsControllerApi  # noqa: E501
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.api.ecs_server_group_events_controller_api import EcsServerGroupEventsControllerApi  # noqa: E501
+from spinnaker-python-client.rest import ApiException
 
 
 class TestEcsServerGroupEventsControllerApi(unittest.TestCase):
     """EcsServerGroupEventsControllerApi unit test stubs"""
 
     def setUp(self):
-        self.api = swagger_client.api.ecs_server_group_events_controller_api.EcsServerGroupEventsControllerApi()  # noqa: E501
+        self.api = spinnaker-python-client.api.ecs_server_group_events_controller_api.EcsServerGroupEventsControllerApi()  # noqa: E501
 
     def tearDown(self):
         pass

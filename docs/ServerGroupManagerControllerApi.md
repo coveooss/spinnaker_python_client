@@ -1,4 +1,4 @@
-# swagger_client.ServerGroupManagerControllerApi
+# spinnaker-python-client.ServerGroupManagerControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -16,12 +16,12 @@ Retrieve a list of server group managers for an application
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ServerGroupManagerControllerApi()
+api_instance = spinnaker-python-client.ServerGroupManagerControllerApi()
 application = 'application_example' # str | application
 
 try:
@@ -48,7 +48,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

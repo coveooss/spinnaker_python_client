@@ -1,4 +1,4 @@
-# swagger_client.V2PipelineTemplatesControllerApi
+# spinnaker-python-client.V2PipelineTemplatesControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -9,12 +9,13 @@ Method | HTTP request | Description
 [**get_using_get2**](V2PipelineTemplatesControllerApi.md#get_using_get2) | **GET** /v2/pipelineTemplates/{id} | (ALPHA) Get a pipeline template.
 [**list_pipeline_template_dependents_using_get1**](V2PipelineTemplatesControllerApi.md#list_pipeline_template_dependents_using_get1) | **GET** /v2/pipelineTemplates/{id}/dependents | (ALPHA) List all pipelines that implement a pipeline template
 [**list_using_get1**](V2PipelineTemplatesControllerApi.md#list_using_get1) | **GET** /v2/pipelineTemplates | (ALPHA) List pipeline templates.
+[**list_versions_using_get**](V2PipelineTemplatesControllerApi.md#list_versions_using_get) | **GET** /v2/pipelineTemplates/versions | List pipeline templates with versions
 [**plan_using_post**](V2PipelineTemplatesControllerApi.md#plan_using_post) | **POST** /v2/pipelineTemplates/plan | (ALPHA) Plan a pipeline template configuration.
 [**update_using_post1**](V2PipelineTemplatesControllerApi.md#update_using_post1) | **POST** /v2/pipelineTemplates/update/{id} | (ALPHA) Update a pipeline template.
 
 
 # **create_using_post1**
-> create_using_post1(pipeline_template, tag=tag)
+> dict(str, object) create_using_post1(pipeline_template, tag=tag)
 
 (ALPHA) Create a pipeline template.
 
@@ -22,18 +23,19 @@ Method | HTTP request | Description
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.V2PipelineTemplatesControllerApi()
+api_instance = spinnaker-python-client.V2PipelineTemplatesControllerApi()
 pipeline_template = NULL # object | pipelineTemplate
 tag = 'tag_example' # str | tag (optional)
 
 try:
     # (ALPHA) Create a pipeline template.
-    api_instance.create_using_post1(pipeline_template, tag=tag)
+    api_response = api_instance.create_using_post1(pipeline_template, tag=tag)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling V2PipelineTemplatesControllerApi->create_using_post1: %s\n" % e)
 ```
@@ -47,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**dict(str, object)**
 
 ### Authorization
 
@@ -61,7 +63,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_using_delete1**
-> dict(str, object) delete_using_delete1(id, tag=tag, digest=digest, application=application)
+> dict(str, object) delete_using_delete1(id, application=application, digest=digest, tag=tag)
 
 Delete a pipeline template.
 
@@ -69,20 +71,20 @@ Delete a pipeline template.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.V2PipelineTemplatesControllerApi()
+api_instance = spinnaker-python-client.V2PipelineTemplatesControllerApi()
 id = 'id_example' # str | id
-tag = 'tag_example' # str | tag (optional)
-digest = 'digest_example' # str | digest (optional)
 application = 'application_example' # str | application (optional)
+digest = 'digest_example' # str | digest (optional)
+tag = 'tag_example' # str | tag (optional)
 
 try:
     # Delete a pipeline template.
-    api_response = api_instance.delete_using_delete1(id, tag=tag, digest=digest, application=application)
+    api_response = api_instance.delete_using_delete1(id, application=application, digest=digest, tag=tag)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling V2PipelineTemplatesControllerApi->delete_using_delete1: %s\n" % e)
@@ -93,9 +95,9 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| id | 
- **tag** | **str**| tag | [optional] 
- **digest** | **str**| digest | [optional] 
  **application** | **str**| application | [optional] 
+ **digest** | **str**| digest | [optional] 
+ **tag** | **str**| tag | [optional] 
 
 ### Return type
 
@@ -107,13 +109,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_using_get2**
-> dict(str, object) get_using_get2(id, tag=tag, digest=digest)
+> dict(str, object) get_using_get2(id, digest=digest, tag=tag)
 
 (ALPHA) Get a pipeline template.
 
@@ -121,19 +123,19 @@ No authorization required
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.V2PipelineTemplatesControllerApi()
+api_instance = spinnaker-python-client.V2PipelineTemplatesControllerApi()
 id = 'id_example' # str | id
-tag = 'tag_example' # str | tag (optional)
 digest = 'digest_example' # str | digest (optional)
+tag = 'tag_example' # str | tag (optional)
 
 try:
     # (ALPHA) Get a pipeline template.
-    api_response = api_instance.get_using_get2(id, tag=tag, digest=digest)
+    api_response = api_instance.get_using_get2(id, digest=digest, tag=tag)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling V2PipelineTemplatesControllerApi->get_using_get2: %s\n" % e)
@@ -144,8 +146,8 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| id | 
- **tag** | **str**| tag | [optional] 
  **digest** | **str**| digest | [optional] 
+ **tag** | **str**| tag | [optional] 
 
 ### Return type
 
@@ -157,7 +159,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -171,12 +173,12 @@ No authorization required
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.V2PipelineTemplatesControllerApi()
+api_instance = spinnaker-python-client.V2PipelineTemplatesControllerApi()
 id = 'id_example' # str | id
 
 try:
@@ -203,7 +205,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -217,12 +219,12 @@ No authorization required
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.V2PipelineTemplatesControllerApi()
+api_instance = spinnaker-python-client.V2PipelineTemplatesControllerApi()
 scopes = ['scopes_example'] # list[str] | scopes (optional)
 
 try:
@@ -249,7 +251,53 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: */*
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **list_versions_using_get**
+> object list_versions_using_get(scopes=scopes)
+
+List pipeline templates with versions
+
+### Example
+```python
+from __future__ import print_function
+import time
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = spinnaker-python-client.V2PipelineTemplatesControllerApi()
+scopes = ['scopes_example'] # list[str] | scopes (optional)
+
+try:
+    # List pipeline templates with versions
+    api_response = api_instance.list_versions_using_get(scopes=scopes)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling V2PipelineTemplatesControllerApi->list_versions_using_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **scopes** | [**list[str]**](str.md)| scopes | [optional] 
+
+### Return type
+
+**object**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -263,12 +311,12 @@ No authorization required
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.V2PipelineTemplatesControllerApi()
+api_instance = spinnaker-python-client.V2PipelineTemplatesControllerApi()
 pipeline = NULL # object | pipeline
 
 try:
@@ -301,7 +349,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_using_post1**
-> update_using_post1(id, pipeline_template, tag=tag, skip_plan_dependents=skip_plan_dependents)
+> dict(str, object) update_using_post1(id, pipeline_template, skip_plan_dependents=skip_plan_dependents, tag=tag)
 
 (ALPHA) Update a pipeline template.
 
@@ -309,20 +357,21 @@ No authorization required
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.V2PipelineTemplatesControllerApi()
+api_instance = spinnaker-python-client.V2PipelineTemplatesControllerApi()
 id = 'id_example' # str | id
 pipeline_template = NULL # object | pipelineTemplate
-tag = 'tag_example' # str | tag (optional)
 skip_plan_dependents = false # bool | skipPlanDependents (optional) (default to false)
+tag = 'tag_example' # str | tag (optional)
 
 try:
     # (ALPHA) Update a pipeline template.
-    api_instance.update_using_post1(id, pipeline_template, tag=tag, skip_plan_dependents=skip_plan_dependents)
+    api_response = api_instance.update_using_post1(id, pipeline_template, skip_plan_dependents=skip_plan_dependents, tag=tag)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling V2PipelineTemplatesControllerApi->update_using_post1: %s\n" % e)
 ```
@@ -333,12 +382,12 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| id | 
  **pipeline_template** | **object**| pipelineTemplate | 
- **tag** | **str**| tag | [optional] 
  **skip_plan_dependents** | **bool**| skipPlanDependents | [optional] [default to false]
+ **tag** | **str**| tag | [optional] 
 
 ### Return type
 
-void (empty response body)
+**dict(str, object)**
 
 ### Authorization
 

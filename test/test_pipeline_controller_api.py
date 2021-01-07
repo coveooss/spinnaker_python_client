@@ -15,16 +15,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.pipeline_controller_api import PipelineControllerApi  # noqa: E501
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.api.pipeline_controller_api import PipelineControllerApi  # noqa: E501
+from spinnaker-python-client.rest import ApiException
 
 
 class TestPipelineControllerApi(unittest.TestCase):
     """PipelineControllerApi unit test stubs"""
 
     def setUp(self):
-        self.api = swagger_client.api.pipeline_controller_api.PipelineControllerApi()  # noqa: E501
+        self.api = spinnaker-python-client.api.pipeline_controller_api.PipelineControllerApi()  # noqa: E501
 
     def tearDown(self):
         pass
@@ -50,10 +50,10 @@ class TestPipelineControllerApi(unittest.TestCase):
         """
         pass
 
-    def test_evaluate_expression_for_execution_using_delete(self):
-        """Test case for evaluate_expression_for_execution_using_delete
+    def test_evaluate_expression_for_execution_at_stage_using_get(self):
+        """Test case for evaluate_expression_for_execution_at_stage_using_get
 
-        Evaluate a pipeline expression using the provided execution as context  # noqa: E501
+        Evaluate a pipeline expression at a specific stage using the provided execution as context  # noqa: E501
         """
         pass
 
@@ -64,45 +64,17 @@ class TestPipelineControllerApi(unittest.TestCase):
         """
         pass
 
-    def test_evaluate_expression_for_execution_using_head(self):
-        """Test case for evaluate_expression_for_execution_using_head
+    def test_evaluate_expression_for_execution_via_post_using_post1(self):
+        """Test case for evaluate_expression_for_execution_via_post_using_post1
 
         Evaluate a pipeline expression using the provided execution as context  # noqa: E501
         """
         pass
 
-    def test_evaluate_expression_for_execution_using_options(self):
-        """Test case for evaluate_expression_for_execution_using_options
+    def test_evaluate_variables_using_post(self):
+        """Test case for evaluate_variables_using_post
 
-        Evaluate a pipeline expression using the provided execution as context  # noqa: E501
-        """
-        pass
-
-    def test_evaluate_expression_for_execution_using_patch(self):
-        """Test case for evaluate_expression_for_execution_using_patch
-
-        Evaluate a pipeline expression using the provided execution as context  # noqa: E501
-        """
-        pass
-
-    def test_evaluate_expression_for_execution_using_post(self):
-        """Test case for evaluate_expression_for_execution_using_post
-
-        Evaluate a pipeline expression using the provided execution as context  # noqa: E501
-        """
-        pass
-
-    def test_evaluate_expression_for_execution_using_put(self):
-        """Test case for evaluate_expression_for_execution_using_put
-
-        Evaluate a pipeline expression using the provided execution as context  # noqa: E501
-        """
-        pass
-
-    def test_get_pipeline_logs_using_get(self):
-        """Test case for get_pipeline_logs_using_get
-
-        Retrieve pipeline execution logs  # noqa: E501
+        Evaluate variables same as Evaluate Variables stage using the provided execution as context  # noqa: E501
         """
         pass
 

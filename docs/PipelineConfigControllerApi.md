@@ -1,4 +1,4 @@
-# swagger_client.PipelineConfigControllerApi
+# spinnaker-python-client.PipelineConfigControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -18,12 +18,12 @@ Convert a pipeline config to a pipeline template.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineConfigControllerApi()
+api_instance = spinnaker-python-client.PipelineConfigControllerApi()
 pipeline_config_id = 'pipeline_config_id_example' # str | pipelineConfigId
 
 try:
@@ -50,7 +50,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -64,12 +64,12 @@ Get all pipeline configs.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineConfigControllerApi()
+api_instance = spinnaker-python-client.PipelineConfigControllerApi()
 
 try:
     # Get all pipeline configs.
@@ -92,7 +92,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -106,12 +106,12 @@ Get pipeline config history.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PipelineConfigControllerApi()
+api_instance = spinnaker-python-client.PipelineConfigControllerApi()
 pipeline_config_id = 'pipeline_config_id_example' # str | pipelineConfigId
 limit = 20 # int | limit (optional) (default to 20)
 
@@ -140,7 +140,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

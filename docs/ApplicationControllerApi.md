@@ -1,4 +1,4 @@
-# swagger_client.ApplicationControllerApi
+# spinnaker-python-client.ApplicationControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -30,12 +30,12 @@ Cancel pipeline
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ApplicationControllerApi()
+api_instance = spinnaker-python-client.ApplicationControllerApi()
 id = 'id_example' # str | id
 reason = 'reason_example' # str | reason (optional)
 
@@ -78,12 +78,12 @@ Cancel task
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ApplicationControllerApi()
+api_instance = spinnaker-python-client.ApplicationControllerApi()
 id = 'id_example' # str | id
 
 try:
@@ -124,14 +124,14 @@ Retrieve a list of applications
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ApplicationControllerApi()
+api_instance = spinnaker-python-client.ApplicationControllerApi()
 account = 'account_example' # str | filters results to only include applications deployed in the specified account (optional)
-owner = 'owner_example' # str | filteres results to only include applications owned by the specified email (optional)
+owner = 'owner_example' # str | filters results to only include applications owned by the specified email (optional)
 
 try:
     # Retrieve a list of applications
@@ -146,7 +146,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **account** | **str**| filters results to only include applications deployed in the specified account | [optional] 
- **owner** | **str**| filteres results to only include applications owned by the specified email | [optional] 
+ **owner** | **str**| filters results to only include applications owned by the specified email | [optional] 
 
 ### Return type
 
@@ -158,7 +158,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -172,12 +172,12 @@ Retrieve a list of an application's configuration revision history
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ApplicationControllerApi()
+api_instance = spinnaker-python-client.ApplicationControllerApi()
 application = 'application_example' # str | application
 limit = 20 # int | limit (optional) (default to 20)
 
@@ -206,7 +206,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -220,12 +220,12 @@ Retrieve an application's details
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ApplicationControllerApi()
+api_instance = spinnaker-python-client.ApplicationControllerApi()
 application = 'application_example' # str | application
 expand = true # bool | expand (optional) (default to true)
 
@@ -254,7 +254,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -268,12 +268,12 @@ Retrieve a pipeline configuration
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ApplicationControllerApi()
+api_instance = spinnaker-python-client.ApplicationControllerApi()
 application = 'application_example' # str | application
 pipeline_name = 'pipeline_name_example' # str | pipelineName
 
@@ -302,7 +302,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -316,12 +316,12 @@ Retrieve a list of an application's pipeline configurations
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ApplicationControllerApi()
+api_instance = spinnaker-python-client.ApplicationControllerApi()
 application = 'application_example' # str | application
 
 try:
@@ -348,13 +348,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_pipelines_using_get**
-> list[object] get_pipelines_using_get(application, limit=limit, statuses=statuses, expand=expand)
+> list[object] get_pipelines_using_get(application, expand=expand, limit=limit, statuses=statuses)
 
 Retrieve a list of an application's pipeline executions
 
@@ -362,20 +362,20 @@ Retrieve a list of an application's pipeline executions
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ApplicationControllerApi()
+api_instance = spinnaker-python-client.ApplicationControllerApi()
 application = 'application_example' # str | application
+expand = true # bool | expand (optional)
 limit = 56 # int | limit (optional)
 statuses = 'statuses_example' # str | statuses (optional)
-expand = true # bool | expand (optional)
 
 try:
     # Retrieve a list of an application's pipeline executions
-    api_response = api_instance.get_pipelines_using_get(application, limit=limit, statuses=statuses, expand=expand)
+    api_response = api_instance.get_pipelines_using_get(application, expand=expand, limit=limit, statuses=statuses)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling ApplicationControllerApi->get_pipelines_using_get: %s\n" % e)
@@ -386,9 +386,9 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **application** | **str**| application | 
+ **expand** | **bool**| expand | [optional] 
  **limit** | **int**| limit | [optional] 
  **statuses** | **str**| statuses | [optional] 
- **expand** | **bool**| expand | [optional] 
 
 ### Return type
 
@@ -400,7 +400,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -414,12 +414,12 @@ Retrieve a pipeline strategy configuration
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ApplicationControllerApi()
+api_instance = spinnaker-python-client.ApplicationControllerApi()
 application = 'application_example' # str | application
 strategy_name = 'strategy_name_example' # str | strategyName
 
@@ -448,7 +448,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -462,12 +462,12 @@ Retrieve a list of an application's pipeline strategy configurations
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ApplicationControllerApi()
+api_instance = spinnaker-python-client.ApplicationControllerApi()
 application = 'application_example' # str | application
 
 try:
@@ -494,7 +494,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -508,12 +508,12 @@ Get task details
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ApplicationControllerApi()
+api_instance = spinnaker-python-client.ApplicationControllerApi()
 id = 'id_example' # str | id
 task_details_id = 'task_details_id_example' # str | taskDetailsId
 x_rate_limit_app = 'x_rate_limit_app_example' # str | X-RateLimit-App (optional)
@@ -544,7 +544,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -558,12 +558,12 @@ Get task
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ApplicationControllerApi()
+api_instance = spinnaker-python-client.ApplicationControllerApi()
 id = 'id_example' # str | id
 
 try:
@@ -590,13 +590,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_tasks_using_get**
-> list[object] get_tasks_using_get(application, page=page, limit=limit, statuses=statuses)
+> list[object] get_tasks_using_get(application, limit=limit, page=page, statuses=statuses)
 
 Retrieve a list of an application's tasks
 
@@ -604,20 +604,20 @@ Retrieve a list of an application's tasks
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ApplicationControllerApi()
+api_instance = spinnaker-python-client.ApplicationControllerApi()
 application = 'application_example' # str | application
-page = 56 # int | page (optional)
 limit = 56 # int | limit (optional)
+page = 56 # int | page (optional)
 statuses = 'statuses_example' # str | statuses (optional)
 
 try:
     # Retrieve a list of an application's tasks
-    api_response = api_instance.get_tasks_using_get(application, page=page, limit=limit, statuses=statuses)
+    api_response = api_instance.get_tasks_using_get(application, limit=limit, page=page, statuses=statuses)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling ApplicationControllerApi->get_tasks_using_get: %s\n" % e)
@@ -628,8 +628,8 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **application** | **str**| application | 
- **page** | **int**| page | [optional] 
  **limit** | **int**| limit | [optional] 
+ **page** | **int**| page | [optional] 
  **statuses** | **str**| statuses | [optional] 
 
 ### Return type
@@ -642,7 +642,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -656,12 +656,12 @@ Invoke pipeline config
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ApplicationControllerApi()
+api_instance = spinnaker-python-client.ApplicationControllerApi()
 application = 'application_example' # str | application
 pipeline_name = 'pipeline_name_example' # str | pipelineName
 trigger = NULL # object | trigger (optional)
@@ -708,12 +708,12 @@ Create task
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ApplicationControllerApi()
+api_instance = spinnaker-python-client.ApplicationControllerApi()
 application = 'application_example' # str | application
 map = NULL # object | map
 

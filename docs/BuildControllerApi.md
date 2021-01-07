@@ -1,4 +1,4 @@
-# swagger_client.BuildControllerApi
+# spinnaker-python-client.BuildControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 
 # **get_build_masters_using_get**
-> list[object] get_build_masters_using_get(type)
+> list[object] get_build_masters_using_get(type=type)
 
 Get build masters
 
@@ -27,17 +27,17 @@ Deprecated, use the v3 endpoint instead
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.BuildControllerApi()
-type = 'type_example' # str | type
+api_instance = spinnaker-python-client.BuildControllerApi()
+type = 'type_example' # str | type (optional)
 
 try:
     # Get build masters
-    api_response = api_instance.get_build_masters_using_get(type)
+    api_response = api_instance.get_build_masters_using_get(type=type)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling BuildControllerApi->get_build_masters_using_get: %s\n" % e)
@@ -47,7 +47,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **type** | **str**| type | 
+ **type** | **str**| type | [optional] 
 
 ### Return type
 
@@ -59,7 +59,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -75,12 +75,12 @@ Deprecated, use the v3 endpoint instead
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.BuildControllerApi()
+api_instance = spinnaker-python-client.BuildControllerApi()
 build_master = 'build_master_example' # str | buildMaster
 number = 'number_example' # str | number
 
@@ -109,7 +109,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -125,12 +125,12 @@ Deprecated, use the v3 endpoint instead
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.BuildControllerApi()
+api_instance = spinnaker-python-client.BuildControllerApi()
 build_master = 'build_master_example' # str | buildMaster
 
 try:
@@ -157,7 +157,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -173,12 +173,12 @@ Deprecated, use the v3 endpoint instead
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.BuildControllerApi()
+api_instance = spinnaker-python-client.BuildControllerApi()
 build_master = 'build_master_example' # str | buildMaster
 
 try:
@@ -205,7 +205,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -221,12 +221,12 @@ Deprecated, use the v3 endpoint instead
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.BuildControllerApi()
+api_instance = spinnaker-python-client.BuildControllerApi()
 build_master = 'build_master_example' # str | buildMaster
 
 try:
@@ -253,13 +253,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **v3_get_build_masters_using_get**
-> list[object] v3_get_build_masters_using_get(type)
+> list[object] v3_get_build_masters_using_get(type=type)
 
 Get build masters
 
@@ -267,17 +267,17 @@ Get build masters
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.BuildControllerApi()
-type = 'type_example' # str | type
+api_instance = spinnaker-python-client.BuildControllerApi()
+type = 'type_example' # str | type (optional)
 
 try:
     # Get build masters
-    api_response = api_instance.v3_get_build_masters_using_get(type)
+    api_response = api_instance.v3_get_build_masters_using_get(type=type)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling BuildControllerApi->v3_get_build_masters_using_get: %s\n" % e)
@@ -287,7 +287,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **type** | **str**| type | 
+ **type** | **str**| type | [optional] 
 
 ### Return type
 
@@ -299,13 +299,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **v3_get_build_using_get**
-> dict(str, object) v3_get_build_using_get(build_master, number, job)
+> dict(str, object) v3_get_build_using_get(build_master, job, number)
 
 Get build for build master
 
@@ -313,19 +313,19 @@ Get build for build master
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.BuildControllerApi()
+api_instance = spinnaker-python-client.BuildControllerApi()
 build_master = 'build_master_example' # str | buildMaster
-number = 'number_example' # str | number
 job = 'job_example' # str | job
+number = 'number_example' # str | number
 
 try:
     # Get build for build master
-    api_response = api_instance.v3_get_build_using_get(build_master, number, job)
+    api_response = api_instance.v3_get_build_using_get(build_master, job, number)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling BuildControllerApi->v3_get_build_using_get: %s\n" % e)
@@ -336,8 +336,8 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **build_master** | **str**| buildMaster | 
- **number** | **str**| number | 
  **job** | **str**| job | 
+ **number** | **str**| number | 
 
 ### Return type
 
@@ -349,7 +349,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -363,12 +363,12 @@ Get builds for build master
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.BuildControllerApi()
+api_instance = spinnaker-python-client.BuildControllerApi()
 build_master = 'build_master_example' # str | buildMaster
 job = 'job_example' # str | job
 
@@ -397,7 +397,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -411,12 +411,12 @@ Get job config
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.BuildControllerApi()
+api_instance = spinnaker-python-client.BuildControllerApi()
 build_master = 'build_master_example' # str | buildMaster
 job = 'job_example' # str | job
 
@@ -445,7 +445,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -459,12 +459,12 @@ Get jobs for build master
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.BuildControllerApi()
+api_instance = spinnaker-python-client.BuildControllerApi()
 build_master = 'build_master_example' # str | buildMaster
 
 try:
@@ -491,7 +491,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

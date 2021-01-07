@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.mapstringstring import Mapstringstring  # noqa: E501
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.models.mapstringstring import Mapstringstring  # noqa: E501
+from spinnaker-python-client.rest import ApiException
 
 
 class TestMapstringstring(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestMapstringstring(unittest.TestCase):
     def testMapstringstring(self):
         """Test Mapstringstring"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.mapstringstring.Mapstringstring()  # noqa: E501
+        # model = spinnaker-python-client.models.mapstringstring.Mapstringstring()  # noqa: E501
         pass
 
 

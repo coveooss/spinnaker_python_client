@@ -1,4 +1,4 @@
-# swagger_client.ProjectControllerApi
+# spinnaker-python-client.ProjectControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -19,12 +19,12 @@ Get all pipelines for project
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProjectControllerApi()
+api_instance = spinnaker-python-client.ProjectControllerApi()
 id = 'id_example' # str | id
 limit = 5 # int | limit (optional) (default to 5)
 statuses = 'statuses_example' # str | statuses (optional)
@@ -55,7 +55,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -69,12 +69,12 @@ Get all projects
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProjectControllerApi()
+api_instance = spinnaker-python-client.ProjectControllerApi()
 
 try:
     # Get all projects
@@ -97,7 +97,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -111,12 +111,12 @@ Get a project's clusters
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProjectControllerApi()
+api_instance = spinnaker-python-client.ProjectControllerApi()
 id = 'id_example' # str | id
 x_rate_limit_app = 'x_rate_limit_app_example' # str | X-RateLimit-App (optional)
 
@@ -145,7 +145,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -159,12 +159,12 @@ Get a project
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProjectControllerApi()
+api_instance = spinnaker-python-client.ProjectControllerApi()
 id = 'id_example' # str | id
 
 try:
@@ -191,7 +191,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

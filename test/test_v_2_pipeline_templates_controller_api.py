@@ -15,16 +15,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.v_2_pipeline_templates_controller_api import V2PipelineTemplatesControllerApi  # noqa: E501
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.api.v_2_pipeline_templates_controller_api import V2PipelineTemplatesControllerApi  # noqa: E501
+from spinnaker-python-client.rest import ApiException
 
 
 class TestV2PipelineTemplatesControllerApi(unittest.TestCase):
     """V2PipelineTemplatesControllerApi unit test stubs"""
 
     def setUp(self):
-        self.api = swagger_client.api.v_2_pipeline_templates_controller_api.V2PipelineTemplatesControllerApi()  # noqa: E501
+        self.api = spinnaker-python-client.api.v_2_pipeline_templates_controller_api.V2PipelineTemplatesControllerApi()  # noqa: E501
 
     def tearDown(self):
         pass
@@ -61,6 +61,13 @@ class TestV2PipelineTemplatesControllerApi(unittest.TestCase):
         """Test case for list_using_get1
 
         (ALPHA) List pipeline templates.  # noqa: E501
+        """
+        pass
+
+    def test_list_versions_using_get(self):
+        """Test case for list_versions_using_get
+
+        List pipeline templates with versions  # noqa: E501
         """
         pass
 

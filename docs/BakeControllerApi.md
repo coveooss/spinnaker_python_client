@@ -1,4 +1,4 @@
-# swagger_client.BakeControllerApi
+# spinnaker-python-client.BakeControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -18,12 +18,12 @@ Retrieve a list of available bakery base images for a given cloud provider
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.BakeControllerApi()
+api_instance = spinnaker-python-client.BakeControllerApi()
 cloud_provider = 'cloud_provider_example' # str | cloudProvider
 
 try:
@@ -50,7 +50,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -64,12 +64,12 @@ Retrieve a list of available bakery base images, grouped by cloud provider
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.BakeControllerApi()
+api_instance = spinnaker-python-client.BakeControllerApi()
 
 try:
     # Retrieve a list of available bakery base images, grouped by cloud provider
@@ -92,7 +92,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -106,12 +106,12 @@ Retrieve the logs for a given bake
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.BakeControllerApi()
+api_instance = spinnaker-python-client.BakeControllerApi()
 region = 'region_example' # str | region
 status_id = 'status_id_example' # str | statusId
 
@@ -140,7 +140,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

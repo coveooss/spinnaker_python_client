@@ -1,4 +1,4 @@
-# swagger_client.AuthControllerApi
+# spinnaker-python-client.AuthControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **get_service_accounts_using_get**
-> list[object] get_service_accounts_using_get()
+> list[object] get_service_accounts_using_get(application=application)
 
 Get service accounts
 
@@ -20,23 +20,27 @@ Get service accounts
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AuthControllerApi()
+api_instance = spinnaker-python-client.AuthControllerApi()
+application = 'application_example' # str | application (optional)
 
 try:
     # Get service accounts
-    api_response = api_instance.get_service_accounts_using_get()
+    api_response = api_instance.get_service_accounts_using_get(application=application)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling AuthControllerApi->get_service_accounts_using_get: %s\n" % e)
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **application** | **str**| application | [optional] 
 
 ### Return type
 
@@ -48,7 +52,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -62,12 +66,12 @@ Get logged out message
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AuthControllerApi()
+api_instance = spinnaker-python-client.AuthControllerApi()
 
 try:
     # Get logged out message
@@ -90,7 +94,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -104,12 +108,12 @@ Redirect to Deck
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AuthControllerApi()
+api_instance = spinnaker-python-client.AuthControllerApi()
 to = 'to_example' # str | to
 
 try:
@@ -135,7 +139,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -149,12 +153,12 @@ Sync user roles
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AuthControllerApi()
+api_instance = spinnaker-python-client.AuthControllerApi()
 
 try:
     # Sync user roles
@@ -190,12 +194,12 @@ Get user
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AuthControllerApi()
+api_instance = spinnaker-python-client.AuthControllerApi()
 
 try:
     # Get user
@@ -218,7 +222,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

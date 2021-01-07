@@ -1,4 +1,4 @@
-# swagger_client.ReorderPipelinesControllerApi
+# spinnaker-python-client.ReorderPipelinesControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -16,13 +16,13 @@ Re-order pipelines
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ReorderPipelinesControllerApi()
-reorder_pipelines_command = swagger_client.ReorderPipelinesCommand() # ReorderPipelinesCommand | reorderPipelinesCommand
+api_instance = spinnaker-python-client.ReorderPipelinesControllerApi()
+reorder_pipelines_command = spinnaker-python-client.ReorderPipelinesCommand() # ReorderPipelinesCommand | reorderPipelinesCommand
 
 try:
     # Re-order pipelines

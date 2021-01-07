@@ -15,16 +15,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.load_balancer_controller_api import LoadBalancerControllerApi  # noqa: E501
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.api.load_balancer_controller_api import LoadBalancerControllerApi  # noqa: E501
+from spinnaker-python-client.rest import ApiException
 
 
 class TestLoadBalancerControllerApi(unittest.TestCase):
     """LoadBalancerControllerApi unit test stubs"""
 
     def setUp(self):
-        self.api = swagger_client.api.load_balancer_controller_api.LoadBalancerControllerApi()  # noqa: E501
+        self.api = spinnaker-python-client.api.load_balancer_controller_api.LoadBalancerControllerApi()  # noqa: E501
 
     def tearDown(self):
         pass

@@ -15,18 +15,32 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.amazon_infrastructure_controller_api import AmazonInfrastructureControllerApi  # noqa: E501
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.api.amazon_infrastructure_controller_api import AmazonInfrastructureControllerApi  # noqa: E501
+from spinnaker-python-client.rest import ApiException
 
 
 class TestAmazonInfrastructureControllerApi(unittest.TestCase):
     """AmazonInfrastructureControllerApi unit test stubs"""
 
     def setUp(self):
-        self.api = swagger_client.api.amazon_infrastructure_controller_api.AmazonInfrastructureControllerApi()  # noqa: E501
+        self.api = spinnaker-python-client.api.amazon_infrastructure_controller_api.AmazonInfrastructureControllerApi()  # noqa: E501
 
     def tearDown(self):
+        pass
+
+    def test_application_functions_using_get(self):
+        """Test case for application_functions_using_get
+
+        Get application functions  # noqa: E501
+        """
+        pass
+
+    def test_functions_using_get(self):
+        """Test case for functions_using_get
+
+        Get functions  # noqa: E501
+        """
         pass
 
     def test_instance_types_using_get(self):

@@ -1,4 +1,4 @@
-# swagger_client.ServerGroupControllerApi
+# spinnaker-python-client.ServerGroupControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **get_server_group_details_using_get**
-> object get_server_group_details_using_get(application_name, account, region, server_group_name, x_rate_limit_app=x_rate_limit_app, include_details=include_details)
+> object get_server_group_details_using_get(account, application_name, region, server_group_name, x_rate_limit_app=x_rate_limit_app, include_details=include_details)
 
 Retrieve a server group's details
 
@@ -17,14 +17,14 @@ Retrieve a server group's details
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ServerGroupControllerApi()
-application_name = 'application_name_example' # str | applicationName
+api_instance = spinnaker-python-client.ServerGroupControllerApi()
 account = 'account_example' # str | account
+application_name = 'application_name_example' # str | applicationName
 region = 'region_example' # str | region
 server_group_name = 'server_group_name_example' # str | serverGroupName
 x_rate_limit_app = 'x_rate_limit_app_example' # str | X-RateLimit-App (optional)
@@ -32,7 +32,7 @@ include_details = 'true' # str | includeDetails (optional) (default to true)
 
 try:
     # Retrieve a server group's details
-    api_response = api_instance.get_server_group_details_using_get(application_name, account, region, server_group_name, x_rate_limit_app=x_rate_limit_app, include_details=include_details)
+    api_response = api_instance.get_server_group_details_using_get(account, application_name, region, server_group_name, x_rate_limit_app=x_rate_limit_app, include_details=include_details)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling ServerGroupControllerApi->get_server_group_details_using_get: %s\n" % e)
@@ -42,8 +42,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **application_name** | **str**| applicationName | 
  **account** | **str**| account | 
+ **application_name** | **str**| applicationName | 
  **region** | **str**| region | 
  **server_group_name** | **str**| serverGroupName | 
  **x_rate_limit_app** | **str**| X-RateLimit-App | [optional] 
@@ -59,13 +59,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_server_groups_for_application_using_get**
-> list[object] get_server_groups_for_application_using_get(application_name, expand=expand, cloud_provider=cloud_provider, clusters=clusters, x_rate_limit_app=x_rate_limit_app)
+> list[object] get_server_groups_for_application_using_get(application_name, x_rate_limit_app=x_rate_limit_app, cloud_provider=cloud_provider, clusters=clusters, expand=expand)
 
 Retrieve a list of server groups for a given application
 
@@ -73,21 +73,21 @@ Retrieve a list of server groups for a given application
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ServerGroupControllerApi()
+api_instance = spinnaker-python-client.ServerGroupControllerApi()
 application_name = 'application_name_example' # str | applicationName
-expand = 'false' # str | expand (optional) (default to false)
+x_rate_limit_app = 'x_rate_limit_app_example' # str | X-RateLimit-App (optional)
 cloud_provider = 'cloud_provider_example' # str | cloudProvider (optional)
 clusters = 'clusters_example' # str | clusters (optional)
-x_rate_limit_app = 'x_rate_limit_app_example' # str | X-RateLimit-App (optional)
+expand = 'false' # str | expand (optional) (default to false)
 
 try:
     # Retrieve a list of server groups for a given application
-    api_response = api_instance.get_server_groups_for_application_using_get(application_name, expand=expand, cloud_provider=cloud_provider, clusters=clusters, x_rate_limit_app=x_rate_limit_app)
+    api_response = api_instance.get_server_groups_for_application_using_get(application_name, x_rate_limit_app=x_rate_limit_app, cloud_provider=cloud_provider, clusters=clusters, expand=expand)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling ServerGroupControllerApi->get_server_groups_for_application_using_get: %s\n" % e)
@@ -98,10 +98,10 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **application_name** | **str**| applicationName | 
- **expand** | **str**| expand | [optional] [default to false]
+ **x_rate_limit_app** | **str**| X-RateLimit-App | [optional] 
  **cloud_provider** | **str**| cloudProvider | [optional] 
  **clusters** | **str**| clusters | [optional] 
- **x_rate_limit_app** | **str**| X-RateLimit-App | [optional] 
+ **expand** | **str**| expand | [optional] [default to false]
 
 ### Return type
 
@@ -113,7 +113,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

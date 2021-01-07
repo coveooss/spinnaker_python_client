@@ -1,4 +1,4 @@
-# swagger_client.TaskControllerApi
+# spinnaker-python-client.TaskControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -21,12 +21,12 @@ Cancel task
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TaskControllerApi()
+api_instance = spinnaker-python-client.TaskControllerApi()
 id = 'id_example' # str | id
 
 try:
@@ -67,12 +67,12 @@ Cancel tasks
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TaskControllerApi()
+api_instance = spinnaker-python-client.TaskControllerApi()
 ids = ['ids_example'] # list[str] | ids
 
 try:
@@ -113,12 +113,12 @@ Delete task
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TaskControllerApi()
+api_instance = spinnaker-python-client.TaskControllerApi()
 id = 'id_example' # str | id
 
 try:
@@ -145,7 +145,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -159,12 +159,12 @@ Get task details
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TaskControllerApi()
+api_instance = spinnaker-python-client.TaskControllerApi()
 id = 'id_example' # str | id
 task_details_id = 'task_details_id_example' # str | taskDetailsId
 x_rate_limit_app = 'x_rate_limit_app_example' # str | X-RateLimit-App (optional)
@@ -195,7 +195,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -209,12 +209,12 @@ Get task
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TaskControllerApi()
+api_instance = spinnaker-python-client.TaskControllerApi()
 id = 'id_example' # str | id
 
 try:
@@ -241,7 +241,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -255,12 +255,12 @@ Create task
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TaskControllerApi()
+api_instance = spinnaker-python-client.TaskControllerApi()
 map = NULL # object | map
 
 try:

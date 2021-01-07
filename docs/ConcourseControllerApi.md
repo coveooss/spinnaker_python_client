@@ -1,4 +1,4 @@
-# swagger_client.ConcourseControllerApi
+# spinnaker-python-client.ConcourseControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **jobs_using_get**
-> list[object] jobs_using_get(build_master, team, pipeline)
+> list[object] jobs_using_get(build_master, pipeline, team)
 
 Retrieve the list of job names for a given pipeline available to triggers
 
@@ -18,19 +18,19 @@ Retrieve the list of job names for a given pipeline available to triggers
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ConcourseControllerApi()
+api_instance = spinnaker-python-client.ConcourseControllerApi()
 build_master = 'build_master_example' # str | buildMaster
-team = 'team_example' # str | team
 pipeline = 'pipeline_example' # str | pipeline
+team = 'team_example' # str | team
 
 try:
     # Retrieve the list of job names for a given pipeline available to triggers
-    api_response = api_instance.jobs_using_get(build_master, team, pipeline)
+    api_response = api_instance.jobs_using_get(build_master, pipeline, team)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling ConcourseControllerApi->jobs_using_get: %s\n" % e)
@@ -41,8 +41,8 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **build_master** | **str**| buildMaster | 
- **team** | **str**| team | 
  **pipeline** | **str**| pipeline | 
+ **team** | **str**| team | 
 
 ### Return type
 
@@ -54,7 +54,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -68,12 +68,12 @@ Retrieve the list of pipeline names for a given team available to triggers
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ConcourseControllerApi()
+api_instance = spinnaker-python-client.ConcourseControllerApi()
 build_master = 'build_master_example' # str | buildMaster
 team = 'team_example' # str | team
 
@@ -102,13 +102,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **resources_using_get**
-> list[object] resources_using_get(build_master, team, pipeline)
+> list[object] resources_using_get(build_master, pipeline, team)
 
 Retrieve the list of resource names for a given pipeline available to the Concourse stage
 
@@ -116,19 +116,19 @@ Retrieve the list of resource names for a given pipeline available to the Concou
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ConcourseControllerApi()
+api_instance = spinnaker-python-client.ConcourseControllerApi()
 build_master = 'build_master_example' # str | buildMaster
-team = 'team_example' # str | team
 pipeline = 'pipeline_example' # str | pipeline
+team = 'team_example' # str | team
 
 try:
     # Retrieve the list of resource names for a given pipeline available to the Concourse stage
-    api_response = api_instance.resources_using_get(build_master, team, pipeline)
+    api_response = api_instance.resources_using_get(build_master, pipeline, team)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling ConcourseControllerApi->resources_using_get: %s\n" % e)
@@ -139,8 +139,8 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **build_master** | **str**| buildMaster | 
- **team** | **str**| team | 
  **pipeline** | **str**| pipeline | 
+ **team** | **str**| team | 
 
 ### Return type
 
@@ -152,7 +152,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

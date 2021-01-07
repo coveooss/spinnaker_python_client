@@ -1,4 +1,4 @@
-# swagger_client.WebhookControllerApi
+# spinnaker-python-client.WebhookControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -17,12 +17,12 @@ Retrieve a list of preconfigured webhooks in Orca
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WebhookControllerApi()
+api_instance = spinnaker-python-client.WebhookControllerApi()
 
 try:
     # Retrieve a list of preconfigured webhooks in Orca
@@ -45,13 +45,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **webhooks_using_post**
-> object webhooks_using_post(type, source, event=event, x_hub_signature=x_hub_signature, x_event_key=x_event_key)
+> object webhooks_using_post(source, type, x_event_key=x_event_key, x_hub_signature=x_hub_signature, event=event)
 
 Endpoint for posting webhooks to Spinnaker's webhook service
 
@@ -59,21 +59,21 @@ Endpoint for posting webhooks to Spinnaker's webhook service
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WebhookControllerApi()
-type = 'type_example' # str | type
+api_instance = spinnaker-python-client.WebhookControllerApi()
 source = 'source_example' # str | source
-event = NULL # object | event (optional)
-x_hub_signature = 'x_hub_signature_example' # str | X-Hub-Signature (optional)
+type = 'type_example' # str | type
 x_event_key = 'x_event_key_example' # str | X-Event-Key (optional)
+x_hub_signature = 'x_hub_signature_example' # str | X-Hub-Signature (optional)
+event = NULL # object | event (optional)
 
 try:
     # Endpoint for posting webhooks to Spinnaker's webhook service
-    api_response = api_instance.webhooks_using_post(type, source, event=event, x_hub_signature=x_hub_signature, x_event_key=x_event_key)
+    api_response = api_instance.webhooks_using_post(source, type, x_event_key=x_event_key, x_hub_signature=x_hub_signature, event=event)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling WebhookControllerApi->webhooks_using_post: %s\n" % e)
@@ -83,11 +83,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **type** | **str**| type | 
  **source** | **str**| source | 
- **event** | **object**| event | [optional] 
- **x_hub_signature** | **str**| X-Hub-Signature | [optional] 
+ **type** | **str**| type | 
  **x_event_key** | **str**| X-Event-Key | [optional] 
+ **x_hub_signature** | **str**| X-Hub-Signature | [optional] 
+ **event** | **object**| event | [optional] 
 
 ### Return type
 

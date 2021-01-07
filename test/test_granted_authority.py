@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.granted_authority import GrantedAuthority  # noqa: E501
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.models.granted_authority import GrantedAuthority  # noqa: E501
+from spinnaker-python-client.rest import ApiException
 
 
 class TestGrantedAuthority(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGrantedAuthority(unittest.TestCase):
     def testGrantedAuthority(self):
         """Test GrantedAuthority"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.granted_authority.GrantedAuthority()  # noqa: E501
+        # model = spinnaker-python-client.models.granted_authority.GrantedAuthority()  # noqa: E501
         pass
 
 

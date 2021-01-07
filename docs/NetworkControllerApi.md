@@ -1,4 +1,4 @@
-# swagger_client.NetworkControllerApi
+# spinnaker-python-client.NetworkControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -17,12 +17,12 @@ Retrieve a list of networks for a given cloud provider
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.NetworkControllerApi()
+api_instance = spinnaker-python-client.NetworkControllerApi()
 cloud_provider = 'cloud_provider_example' # str | cloudProvider
 x_rate_limit_app = 'x_rate_limit_app_example' # str | X-RateLimit-App (optional)
 
@@ -51,7 +51,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -65,12 +65,12 @@ Retrieve a list of networks, grouped by cloud provider
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.NetworkControllerApi()
+api_instance = spinnaker-python-client.NetworkControllerApi()
 x_rate_limit_app = 'x_rate_limit_app_example' # str | X-RateLimit-App (optional)
 
 try:
@@ -97,7 +97,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: */*
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

@@ -15,22 +15,29 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.v_2_canary_controller_api import V2CanaryControllerApi  # noqa: E501
-from swagger_client.rest import ApiException
+import spinnaker-python-client
+from spinnaker-python-client.api.v_2_canary_controller_api import V2CanaryControllerApi  # noqa: E501
+from spinnaker-python-client.rest import ApiException
 
 
 class TestV2CanaryControllerApi(unittest.TestCase):
     """V2CanaryControllerApi unit test stubs"""
 
     def setUp(self):
-        self.api = swagger_client.api.v_2_canary_controller_api.V2CanaryControllerApi()  # noqa: E501
+        self.api = spinnaker-python-client.api.v_2_canary_controller_api.V2CanaryControllerApi()  # noqa: E501
 
     def tearDown(self):
         pass
 
     def test_get_canary_result_using_get(self):
         """Test case for get_canary_result_using_get
+
+        (DEPRECATED) Retrieve a canary result  # noqa: E501
+        """
+        pass
+
+    def test_get_canary_result_using_get1(self):
+        """Test case for get_canary_result_using_get1
 
         Retrieve a canary result  # noqa: E501
         """
@@ -54,6 +61,13 @@ class TestV2CanaryControllerApi(unittest.TestCase):
         """Test case for initiate_canary_using_post
 
         Start a canary execution  # noqa: E501
+        """
+        pass
+
+    def test_initiate_canary_with_config_using_post(self):
+        """Test case for initiate_canary_with_config_using_post
+
+        Start a canary execution with the supplied canary config  # noqa: E501
         """
         pass
 
