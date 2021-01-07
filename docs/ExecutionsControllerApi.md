@@ -1,4 +1,4 @@
-# spinnaker_client.ExecutionsControllerApi
+# spinnaker_swagger_client.ExecutionsControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -17,12 +17,12 @@ Retrieves an ad-hoc collection of executions based on a number of user-supplied 
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ExecutionsControllerApi()
+api_instance = spinnaker_swagger_client.ExecutionsControllerApi()
 execution_ids = 'execution_ids_example' # str | A comma-separated list of executions to retrieve. Either this OR pipelineConfigIds must be supplied, but not both. (optional)
 expand = true # bool | Expands each execution object in the resulting list. If this value is missing, it is defaulted to true. (optional) (default to true)
 limit = 56 # int | The number of executions to return per pipeline configuration. Ignored if executionIds parameter is supplied. If this value is missing, it is defaulted to 1. (optional)
@@ -71,12 +71,12 @@ Search for pipeline executions using a combination of criteria. The returned lis
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ExecutionsControllerApi()
+api_instance = spinnaker_swagger_client.ExecutionsControllerApi()
 application = 'application_example' # str | Only includes executions that are part of this application. If this value is \"*\", results will include executions of all applications.
 event_id = 'event_id_example' # str | Only includes executions that were triggered by a trigger with this eventId. (optional)
 expand = false # bool | Expands each execution object in the resulting list. If this value is missing, it is defaulted to false. (optional) (default to false)

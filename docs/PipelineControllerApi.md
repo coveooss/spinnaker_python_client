@@ -1,4 +1,4 @@
-# spinnaker_client.PipelineControllerApi
+# spinnaker_swagger_client.PipelineControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -33,12 +33,12 @@ Cancel a pipeline execution
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PipelineControllerApi()
+api_instance = spinnaker_swagger_client.PipelineControllerApi()
 id = 'id_example' # str | id
 force = false # bool | force (optional) (default to false)
 reason = 'reason_example' # str | reason (optional)
@@ -82,12 +82,12 @@ Delete a pipeline definition
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PipelineControllerApi()
+api_instance = spinnaker_swagger_client.PipelineControllerApi()
 application = 'application_example' # str | application
 pipeline_name = 'pipeline_name_example' # str | pipelineName
 
@@ -129,12 +129,12 @@ Delete a pipeline execution
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PipelineControllerApi()
+api_instance = spinnaker_swagger_client.PipelineControllerApi()
 id = 'id_example' # str | id
 
 try:
@@ -175,12 +175,12 @@ Evaluate a pipeline expression at a specific stage using the provided execution 
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PipelineControllerApi()
+api_instance = spinnaker_swagger_client.PipelineControllerApi()
 expression = 'expression_example' # str | expression
 id = 'id_example' # str | id
 stage_id = 'stage_id_example' # str | stageId
@@ -225,12 +225,12 @@ Evaluate a pipeline expression using the provided execution as context
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PipelineControllerApi()
+api_instance = spinnaker_swagger_client.PipelineControllerApi()
 expression = 'expression_example' # str | expression
 id = 'id_example' # str | id
 
@@ -273,12 +273,12 @@ Evaluate a pipeline expression using the provided execution as context
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PipelineControllerApi()
+api_instance = spinnaker_swagger_client.PipelineControllerApi()
 id = 'id_example' # str | id
 pipeline_expression = NULL # object | pipelineExpression
 
@@ -321,14 +321,14 @@ Evaluate variables same as Evaluate Variables stage using the provided execution
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PipelineControllerApi()
+api_instance = spinnaker_swagger_client.PipelineControllerApi()
 execution_id = 'execution_id_example' # str | Execution id to run against
-expressions = [spinnaker_client.Mapstringstring()] # list[Mapstringstring] | List of variables/expressions to evaluate
+expressions = [spinnaker_swagger_client.Mapstringstring()] # list[Mapstringstring] | List of variables/expressions to evaluate
 requisite_stage_ref_ids = 'requisite_stage_ref_ids_example' # str | Comma separated list of requisite stage IDs for the evaluation stage (optional)
 spel_version = 'spel_version_example' # str | Version of SpEL evaluation logic to use (v3 or v4) (optional)
 
@@ -373,12 +373,12 @@ Retrieve a pipeline execution
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PipelineControllerApi()
+api_instance = spinnaker_swagger_client.PipelineControllerApi()
 id = 'id_example' # str | id
 
 try:
@@ -419,12 +419,12 @@ Trigger a pipeline execution
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PipelineControllerApi()
+api_instance = spinnaker_swagger_client.PipelineControllerApi()
 application = 'application_example' # str | application
 pipeline_name_or_id = 'pipeline_name_or_id_example' # str | pipelineNameOrId
 trigger = NULL # object | trigger (optional)
@@ -468,12 +468,12 @@ Trigger a pipeline execution
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PipelineControllerApi()
+api_instance = spinnaker_swagger_client.PipelineControllerApi()
 application = 'application_example' # str | application
 pipeline_name_or_id = 'pipeline_name_or_id_example' # str | pipelineNameOrId
 trigger = NULL # object | trigger (optional)
@@ -518,12 +518,12 @@ Pause a pipeline execution
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PipelineControllerApi()
+api_instance = spinnaker_swagger_client.PipelineControllerApi()
 id = 'id_example' # str | id
 
 try:
@@ -563,12 +563,12 @@ Rename a pipeline definition
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PipelineControllerApi()
+api_instance = spinnaker_swagger_client.PipelineControllerApi()
 rename_command = NULL # object | renameCommand
 
 try:
@@ -608,12 +608,12 @@ Restart a stage execution
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PipelineControllerApi()
+api_instance = spinnaker_swagger_client.PipelineControllerApi()
 context = NULL # object | context
 id = 'id_example' # str | id
 stage_id = 'stage_id_example' # str | stageId
@@ -658,12 +658,12 @@ Resume a pipeline execution
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PipelineControllerApi()
+api_instance = spinnaker_swagger_client.PipelineControllerApi()
 id = 'id_example' # str | id
 
 try:
@@ -704,12 +704,12 @@ Save a pipeline definition
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PipelineControllerApi()
+api_instance = spinnaker_swagger_client.PipelineControllerApi()
 pipeline = NULL # object | pipeline
 stale_check = false # bool | staleCheck (optional) (default to false)
 
@@ -751,12 +751,12 @@ Initiate a pipeline execution
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PipelineControllerApi()
+api_instance = spinnaker_swagger_client.PipelineControllerApi()
 map = NULL # object | map
 
 try:
@@ -797,12 +797,12 @@ Update a pipeline definition
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PipelineControllerApi()
+api_instance = spinnaker_swagger_client.PipelineControllerApi()
 id = 'id_example' # str | id
 pipeline = NULL # object | pipeline
 
@@ -845,12 +845,12 @@ Update a stage execution
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PipelineControllerApi()
+api_instance = spinnaker_swagger_client.PipelineControllerApi()
 context = NULL # object | context
 id = 'id_example' # str | id
 stage_id = 'stage_id_example' # str | stageId

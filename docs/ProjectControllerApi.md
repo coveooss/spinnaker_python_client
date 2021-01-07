@@ -1,4 +1,4 @@
-# spinnaker_client.ProjectControllerApi
+# spinnaker_swagger_client.ProjectControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -19,12 +19,12 @@ Get all pipelines for project
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ProjectControllerApi()
+api_instance = spinnaker_swagger_client.ProjectControllerApi()
 id = 'id_example' # str | id
 limit = 5 # int | limit (optional) (default to 5)
 statuses = 'statuses_example' # str | statuses (optional)
@@ -69,12 +69,12 @@ Get all projects
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ProjectControllerApi()
+api_instance = spinnaker_swagger_client.ProjectControllerApi()
 
 try:
     # Get all projects
@@ -111,12 +111,12 @@ Get a project's clusters
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ProjectControllerApi()
+api_instance = spinnaker_swagger_client.ProjectControllerApi()
 id = 'id_example' # str | id
 x_rate_limit_app = 'x_rate_limit_app_example' # str | X-RateLimit-App (optional)
 
@@ -159,12 +159,12 @@ Get a project
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ProjectControllerApi()
+api_instance = spinnaker_swagger_client.ProjectControllerApi()
 id = 'id_example' # str | id
 
 try:

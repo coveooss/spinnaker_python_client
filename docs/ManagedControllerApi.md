@@ -1,4 +1,4 @@
-# spinnaker_client.ManagedControllerApi
+# spinnaker_swagger_client.ManagedControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -42,14 +42,14 @@ Create a pin for an artifact in an environment
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
 application = 'application_example' # str | application
-pin = spinnaker_client.EnvironmentArtifactPin() # EnvironmentArtifactPin | pin
+pin = spinnaker_swagger_client.EnvironmentArtifactPin() # EnvironmentArtifactPin | pin
 
 try:
     # Create a pin for an artifact in an environment
@@ -89,12 +89,12 @@ Delete a delivery config manifest for an application
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
 application = 'application_example' # str | application
 
 try:
@@ -135,12 +135,12 @@ Delete a delivery config manifest
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
 name = 'name_example' # str | name
 
 try:
@@ -181,12 +181,12 @@ Unpin one or more artifact(s) in an environment. If the `reference` parameter is
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
 application = 'application_example' # str | application
 target_environment = 'target_environment_example' # str | targetEnvironment
 reference = 'reference_example' # str | reference (optional)
@@ -230,12 +230,12 @@ Remove veto of an artifact version in an environment
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
 application = 'application_example' # str | application
 reference = 'reference_example' # str | reference
 target_environment = 'target_environment_example' # str | targetEnvironment
@@ -281,13 +281,13 @@ Ad-hoc validate and diff a config manifest
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
-manifest = spinnaker_client.DeliveryConfig() # DeliveryConfig | manifest
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
+manifest = spinnaker_swagger_client.DeliveryConfig() # DeliveryConfig | manifest
 
 try:
     # Ad-hoc validate and diff a config manifest
@@ -327,13 +327,13 @@ Ad-hoc validate and diff a resource
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
-resource = spinnaker_client.Resource() # Resource | resource
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
+resource = spinnaker_swagger_client.Resource() # Resource | resource
 
 try:
     # Ad-hoc validate and diff a resource
@@ -373,12 +373,12 @@ Generates an artifact definition based on the artifact used in a running cluster
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
 account = 'account_example' # str | account
 cloud_provider = 'cloud_provider_example' # str | cloudProvider
 cluster_name = 'cluster_name_example' # str | clusterName
@@ -423,12 +423,12 @@ Generate a keel resource definition for a deployed cloud resource
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
 account = 'account_example' # str | account
 cloud_provider = 'cloud_provider_example' # str | cloudProvider
 name = 'name_example' # str | name
@@ -477,12 +477,12 @@ Get managed details about an application
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
 application = 'application_example' # str | application
 entities = ['entities_example'] # list[str] | entities (optional)
 include_details = false # bool | includeDetails (optional) (default to false)
@@ -529,12 +529,12 @@ Get the delivery config associated with an application
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
 application = 'application_example' # str | application
 
 try:
@@ -575,12 +575,12 @@ List up-to {limit} current constraint states for an environment
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
 application = 'application_example' # str | application
 environment = 'environment_example' # str | environment
 limit = '10' # str | limit (optional) (default to 10)
@@ -625,12 +625,12 @@ Get the status of each version of each artifact in each environment
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
 name = 'name_example' # str | name
 
 try:
@@ -671,12 +671,12 @@ Get a delivery config manifest
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
 name = 'name_example' # str | name
 
 try:
@@ -717,12 +717,12 @@ Get a delivery config manifest
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
 name = 'name_example' # str | name
 
 try:
@@ -763,12 +763,12 @@ Get status of a resource
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
 resource_id = 'resource_id_example' # str | resourceId
 
 try:
@@ -809,12 +809,12 @@ Get a resource
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
 resource_id = 'resource_id_example' # str | resourceId
 
 try:
@@ -855,12 +855,12 @@ Get a resource
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
 resource_id = 'resource_id_example' # str | resourceId
 
 try:
@@ -901,12 +901,12 @@ Pause management of an entire application
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
 application = 'application_example' # str | application
 
 try:
@@ -946,12 +946,12 @@ Pause management of a resource
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
 resource_id = 'resource_id_example' # str | resourceId
 
 try:
@@ -991,12 +991,12 @@ Resume management of an entire application
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
 application = 'application_example' # str | application
 
 try:
@@ -1036,12 +1036,12 @@ Resume management of a resource
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
 resource_id = 'resource_id_example' # str | resourceId
 
 try:
@@ -1081,12 +1081,12 @@ Ad-hoc validate and diff a config manifest
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
 
 try:
     # Ad-hoc validate and diff a config manifest
@@ -1123,15 +1123,15 @@ Update the status of an environment constraint
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
 application = 'application_example' # str | application
 environment = 'environment_example' # str | environment
-status = spinnaker_client.ConstraintStatus() # ConstraintStatus | status
+status = spinnaker_swagger_client.ConstraintStatus() # ConstraintStatus | status
 
 try:
     # Update the status of an environment constraint
@@ -1172,13 +1172,13 @@ Create or update a delivery config manifest
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
-manifest = spinnaker_client.DeliveryConfig() # DeliveryConfig | manifest
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
+manifest = spinnaker_swagger_client.DeliveryConfig() # DeliveryConfig | manifest
 
 try:
     # Create or update a delivery config manifest
@@ -1218,13 +1218,13 @@ Validate a delivery config manifest
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
-manifest = spinnaker_client.DeliveryConfig() # DeliveryConfig | manifest
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
+manifest = spinnaker_swagger_client.DeliveryConfig() # DeliveryConfig | manifest
 
 try:
     # Validate a delivery config manifest
@@ -1264,14 +1264,14 @@ Veto an artifact version in an environment
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ManagedControllerApi()
+api_instance = spinnaker_swagger_client.ManagedControllerApi()
 application = 'application_example' # str | application
-veto = spinnaker_client.EnvironmentArtifactVeto() # EnvironmentArtifactVeto | veto
+veto = spinnaker_swagger_client.EnvironmentArtifactVeto() # EnvironmentArtifactVeto | veto
 
 try:
     # Veto an artifact version in an environment

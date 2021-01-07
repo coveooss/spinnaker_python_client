@@ -1,4 +1,4 @@
-# spinnaker_client.SecurityGroupControllerApi
+# spinnaker_swagger_client.SecurityGroupControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -18,12 +18,12 @@ Retrieve a list of security groups for a given account, grouped by region
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.SecurityGroupControllerApi()
+api_instance = spinnaker_swagger_client.SecurityGroupControllerApi()
 account = 'account_example' # str | account
 x_rate_limit_app = 'x_rate_limit_app_example' # str | X-RateLimit-App (optional)
 provider = 'aws' # str | provider (optional) (default to aws)
@@ -68,12 +68,12 @@ Retrieve a list of security groups, grouped by account, cloud provider, and regi
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.SecurityGroupControllerApi()
+api_instance = spinnaker_swagger_client.SecurityGroupControllerApi()
 x_rate_limit_app = 'x_rate_limit_app_example' # str | X-RateLimit-App (optional)
 id = 'id_example' # str | id (optional)
 
@@ -116,12 +116,12 @@ Retrieve a security group's details
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.SecurityGroupControllerApi()
+api_instance = spinnaker_swagger_client.SecurityGroupControllerApi()
 account = 'account_example' # str | account
 name = 'name_example' # str | name
 region = 'region_example' # str | region

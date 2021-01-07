@@ -1,4 +1,4 @@
-# spinnaker_client.EcsServerGroupEventsControllerApi
+# spinnaker_swagger_client.EcsServerGroupEventsControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -16,12 +16,12 @@ Retrieves a list of events for a server group
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.EcsServerGroupEventsControllerApi()
+api_instance = spinnaker_swagger_client.EcsServerGroupEventsControllerApi()
 account = 'account_example' # str | account
 application = 'application_example' # str | application
 provider = 'provider_example' # str | provider

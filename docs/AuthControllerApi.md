@@ -1,4 +1,4 @@
-# spinnaker_client.AuthControllerApi
+# spinnaker_swagger_client.AuthControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -20,12 +20,12 @@ Get service accounts
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.AuthControllerApi()
+api_instance = spinnaker_swagger_client.AuthControllerApi()
 application = 'application_example' # str | application (optional)
 
 try:
@@ -66,12 +66,12 @@ Get logged out message
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.AuthControllerApi()
+api_instance = spinnaker_swagger_client.AuthControllerApi()
 
 try:
     # Get logged out message
@@ -108,12 +108,12 @@ Redirect to Deck
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.AuthControllerApi()
+api_instance = spinnaker_swagger_client.AuthControllerApi()
 to = 'to_example' # str | to
 
 try:
@@ -153,12 +153,12 @@ Sync user roles
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.AuthControllerApi()
+api_instance = spinnaker_swagger_client.AuthControllerApi()
 
 try:
     # Sync user roles
@@ -194,12 +194,12 @@ Get user
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.AuthControllerApi()
+api_instance = spinnaker_swagger_client.AuthControllerApi()
 
 try:
     # Get user

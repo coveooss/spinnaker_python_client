@@ -1,4 +1,4 @@
-# spinnaker_client.PluginPublishControllerApi
+# spinnaker_swagger_client.PluginPublishControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -16,12 +16,12 @@ Publish a plugin binary and the plugin info metadata.
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PluginPublishControllerApi()
+api_instance = spinnaker_swagger_client.PluginPublishControllerApi()
 plugin = '/path/to/file.txt' # file | plugin
 plugin_id = 'plugin_id_example' # str | pluginId
 plugin_info = NULL # object | pluginInfo

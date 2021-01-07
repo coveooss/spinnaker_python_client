@@ -1,4 +1,4 @@
-# spinnaker_client.ClusterControllerApi
+# spinnaker_swagger_client.ClusterControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -23,12 +23,12 @@ Retrieve a cluster's loadbalancers
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ClusterControllerApi()
+api_instance = spinnaker_swagger_client.ClusterControllerApi()
 account = 'account_example' # str | account
 application_name = 'application_name_example' # str | applicationName
 cluster_name = 'cluster_name_example' # str | clusterName
@@ -77,12 +77,12 @@ Retrieve a cluster's details
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ClusterControllerApi()
+api_instance = spinnaker_swagger_client.ClusterControllerApi()
 account = 'account_example' # str | account
 application = 'application_example' # str | application
 cluster_name = 'cluster_name_example' # str | clusterName
@@ -129,12 +129,12 @@ Retrieve a list of clusters for an account
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ClusterControllerApi()
+api_instance = spinnaker_swagger_client.ClusterControllerApi()
 account = 'account_example' # str | account
 application = 'application_example' # str | application
 x_rate_limit_app = 'x_rate_limit_app_example' # str | X-RateLimit-App (optional)
@@ -179,12 +179,12 @@ Retrieve a list of cluster names for an application, grouped by account
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ClusterControllerApi()
+api_instance = spinnaker_swagger_client.ClusterControllerApi()
 application = 'application_example' # str | application
 x_rate_limit_app = 'x_rate_limit_app_example' # str | X-RateLimit-App (optional)
 
@@ -227,12 +227,12 @@ Retrieve a list of scaling activities for a server group
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ClusterControllerApi()
+api_instance = spinnaker_swagger_client.ClusterControllerApi()
 account = 'account_example' # str | account
 application = 'application_example' # str | application
 cluster_name = 'cluster_name_example' # str | clusterName
@@ -285,12 +285,12 @@ Retrieve a server group's details
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ClusterControllerApi()
+api_instance = spinnaker_swagger_client.ClusterControllerApi()
 account = 'account_example' # str | account
 application = 'application_example' # str | application
 cluster_name = 'cluster_name_example' # str | clusterName
@@ -339,12 +339,12 @@ Retrieve a list of server groups for a cluster
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ClusterControllerApi()
+api_instance = spinnaker_swagger_client.ClusterControllerApi()
 account = 'account_example' # str | account
 application = 'application_example' # str | application
 cluster_name = 'cluster_name_example' # str | clusterName
@@ -393,12 +393,12 @@ Retrieve a server group that matches a target coordinate (e.g., newest, ancestor
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ClusterControllerApi()
+api_instance = spinnaker_swagger_client.ClusterControllerApi()
 account = 'account_example' # str | account
 application = 'application_example' # str | application
 cloud_provider = 'cloud_provider_example' # str | cloudProvider

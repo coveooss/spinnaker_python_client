@@ -1,4 +1,4 @@
-# spinnaker_client.RawResourceControllerApi
+# spinnaker_swagger_client.RawResourceControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -16,12 +16,12 @@ Retrieve a list of raw resources for a given application
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.RawResourceControllerApi()
+api_instance = spinnaker_swagger_client.RawResourceControllerApi()
 application = 'application_example' # str | application
 
 try:

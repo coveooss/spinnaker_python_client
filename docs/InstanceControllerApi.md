@@ -1,4 +1,4 @@
-# spinnaker_client.InstanceControllerApi
+# spinnaker_swagger_client.InstanceControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -17,12 +17,12 @@ Retrieve an instance's console output
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.InstanceControllerApi()
+api_instance = spinnaker_swagger_client.InstanceControllerApi()
 account = 'account_example' # str | account
 instance_id = 'instance_id_example' # str | instanceId
 region = 'region_example' # str | region
@@ -71,12 +71,12 @@ Retrieve an instance's details
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.InstanceControllerApi()
+api_instance = spinnaker_swagger_client.InstanceControllerApi()
 account = 'account_example' # str | account
 instance_id = 'instance_id_example' # str | instanceId
 region = 'region_example' # str | region

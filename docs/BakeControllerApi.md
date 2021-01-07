@@ -1,4 +1,4 @@
-# spinnaker_client.BakeControllerApi
+# spinnaker_swagger_client.BakeControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -18,12 +18,12 @@ Retrieve a list of available bakery base images for a given cloud provider
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.BakeControllerApi()
+api_instance = spinnaker_swagger_client.BakeControllerApi()
 cloud_provider = 'cloud_provider_example' # str | cloudProvider
 
 try:
@@ -64,12 +64,12 @@ Retrieve a list of available bakery base images, grouped by cloud provider
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.BakeControllerApi()
+api_instance = spinnaker_swagger_client.BakeControllerApi()
 
 try:
     # Retrieve a list of available bakery base images, grouped by cloud provider
@@ -106,12 +106,12 @@ Retrieve the logs for a given bake
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.BakeControllerApi()
+api_instance = spinnaker_swagger_client.BakeControllerApi()
 region = 'region_example' # str | region
 status_id = 'status_id_example' # str | statusId
 

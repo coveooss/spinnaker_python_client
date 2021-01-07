@@ -1,4 +1,4 @@
-# spinnaker_client.PipelineTemplatesControllerApi
+# spinnaker_swagger_client.PipelineTemplatesControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -22,12 +22,12 @@ Create a pipeline template.
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PipelineTemplatesControllerApi()
+api_instance = spinnaker_swagger_client.PipelineTemplatesControllerApi()
 pipeline_template = NULL # object | pipelineTemplate
 
 try:
@@ -67,12 +67,12 @@ Delete a pipeline template.
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PipelineTemplatesControllerApi()
+api_instance = spinnaker_swagger_client.PipelineTemplatesControllerApi()
 id = 'id_example' # str | id
 application = 'application_example' # str | application (optional)
 
@@ -115,12 +115,12 @@ Get a pipeline template.
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PipelineTemplatesControllerApi()
+api_instance = spinnaker_swagger_client.PipelineTemplatesControllerApi()
 id = 'id_example' # str | id
 
 try:
@@ -161,12 +161,12 @@ List all pipelines that implement a pipeline template
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PipelineTemplatesControllerApi()
+api_instance = spinnaker_swagger_client.PipelineTemplatesControllerApi()
 id = 'id_example' # str | id
 recursive = true # bool | recursive (optional)
 
@@ -209,12 +209,12 @@ List pipeline templates.
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PipelineTemplatesControllerApi()
+api_instance = spinnaker_swagger_client.PipelineTemplatesControllerApi()
 scopes = ['scopes_example'] # list[str] | scopes (optional)
 
 try:
@@ -255,12 +255,12 @@ Resolve a pipeline template.
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PipelineTemplatesControllerApi()
+api_instance = spinnaker_swagger_client.PipelineTemplatesControllerApi()
 source = 'source_example' # str | source
 execution_id = 'execution_id_example' # str | executionId (optional)
 pipeline_config_id = 'pipeline_config_id_example' # str | pipelineConfigId (optional)
@@ -305,12 +305,12 @@ Update a pipeline template.
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PipelineTemplatesControllerApi()
+api_instance = spinnaker_swagger_client.PipelineTemplatesControllerApi()
 id = 'id_example' # str | id
 pipeline_template = NULL # object | pipelineTemplate
 skip_plan_dependents = false # bool | skipPlanDependents (optional) (default to false)

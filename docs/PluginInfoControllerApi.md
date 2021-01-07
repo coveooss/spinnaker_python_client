@@ -1,4 +1,4 @@
-# spinnaker_client.PluginInfoControllerApi
+# spinnaker_swagger_client.PluginInfoControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -19,12 +19,12 @@ Delete plugin info with the provided Id
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PluginInfoControllerApi()
+api_instance = spinnaker_swagger_client.PluginInfoControllerApi()
 id = 'id_example' # str | id
 
 try:
@@ -65,12 +65,12 @@ Get all plugin info objects
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PluginInfoControllerApi()
+api_instance = spinnaker_swagger_client.PluginInfoControllerApi()
 service = 'service_example' # str | service (optional)
 
 try:
@@ -111,13 +111,13 @@ Persist plugin metadata information
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PluginInfoControllerApi()
-plugin_info = spinnaker_client.SpinnakerPluginInfo() # SpinnakerPluginInfo | pluginInfo
+api_instance = spinnaker_swagger_client.PluginInfoControllerApi()
+plugin_info = spinnaker_swagger_client.SpinnakerPluginInfo() # SpinnakerPluginInfo | pluginInfo
 
 try:
     # Persist plugin metadata information
@@ -156,13 +156,13 @@ Persist plugin metadata information
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PluginInfoControllerApi()
-plugin_info = spinnaker_client.SpinnakerPluginInfo() # SpinnakerPluginInfo | pluginInfo
+api_instance = spinnaker_swagger_client.PluginInfoControllerApi()
+plugin_info = spinnaker_swagger_client.SpinnakerPluginInfo() # SpinnakerPluginInfo | pluginInfo
 
 try:
     # Persist plugin metadata information

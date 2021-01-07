@@ -1,4 +1,4 @@
-# spinnaker_client.LoadBalancerControllerApi
+# spinnaker_swagger_client.LoadBalancerControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -19,12 +19,12 @@ Retrieve a list of load balancers for a given cloud provider
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.LoadBalancerControllerApi()
+api_instance = spinnaker_swagger_client.LoadBalancerControllerApi()
 x_rate_limit_app = 'x_rate_limit_app_example' # str | X-RateLimit-App (optional)
 provider = 'aws' # str | provider (optional) (default to aws)
 
@@ -67,12 +67,12 @@ Retrieve a list of load balancers for a given application
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.LoadBalancerControllerApi()
+api_instance = spinnaker_swagger_client.LoadBalancerControllerApi()
 application = 'application_example' # str | application
 x_rate_limit_app = 'x_rate_limit_app_example' # str | X-RateLimit-App (optional)
 
@@ -115,12 +115,12 @@ Retrieve a load balancer's details as a single element list for a given account,
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.LoadBalancerControllerApi()
+api_instance = spinnaker_swagger_client.LoadBalancerControllerApi()
 account = 'account_example' # str | account
 name = 'name_example' # str | name
 region = 'region_example' # str | region
@@ -169,12 +169,12 @@ Retrieve a load balancer for a given cloud provider
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.LoadBalancerControllerApi()
+api_instance = spinnaker_swagger_client.LoadBalancerControllerApi()
 name = 'name_example' # str | name
 x_rate_limit_app = 'x_rate_limit_app_example' # str | X-RateLimit-App (optional)
 provider = 'aws' # str | provider (optional) (default to aws)

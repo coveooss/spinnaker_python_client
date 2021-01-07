@@ -1,4 +1,4 @@
-# spinnaker_client.V2CanaryControllerApi
+# spinnaker_swagger_client.V2CanaryControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -24,12 +24,12 @@ Method | HTTP request | Description
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.V2CanaryControllerApi()
+api_instance = spinnaker_swagger_client.V2CanaryControllerApi()
 canary_config_id = 'canary_config_id_example' # str | canaryConfigId
 canary_execution_id = 'canary_execution_id_example' # str | canaryExecutionId
 storage_account_name = 'storage_account_name_example' # str | storageAccountName (optional)
@@ -74,12 +74,12 @@ Retrieve a canary result
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.V2CanaryControllerApi()
+api_instance = spinnaker_swagger_client.V2CanaryControllerApi()
 canary_execution_id = 'canary_execution_id_example' # str | canaryExecutionId
 storage_account_name = 'storage_account_name_example' # str | storageAccountName (optional)
 
@@ -122,12 +122,12 @@ Retrieve a list of an application's canary results
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.V2CanaryControllerApi()
+api_instance = spinnaker_swagger_client.V2CanaryControllerApi()
 application = 'application_example' # str | application
 limit = 56 # int | limit
 page = 1 # int | page (optional) (default to 1)
@@ -176,12 +176,12 @@ Retrieve a metric set pair list
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.V2CanaryControllerApi()
+api_instance = spinnaker_swagger_client.V2CanaryControllerApi()
 metric_set_pair_list_id = 'metric_set_pair_list_id_example' # str | metricSetPairListId
 storage_account_name = 'storage_account_name_example' # str | storageAccountName (optional)
 
@@ -224,12 +224,12 @@ Start a canary execution
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.V2CanaryControllerApi()
+api_instance = spinnaker_swagger_client.V2CanaryControllerApi()
 canary_config_id = 'canary_config_id_example' # str | canaryConfigId
 execution_request = NULL # object | executionRequest
 application = 'application_example' # str | application (optional)
@@ -282,12 +282,12 @@ Start a canary execution with the supplied canary config
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.V2CanaryControllerApi()
+api_instance = spinnaker_swagger_client.V2CanaryControllerApi()
 adhoc_execution_request = NULL # object | adhocExecutionRequest
 application = 'application_example' # str | application (optional)
 metrics_account_name = 'metrics_account_name_example' # str | metricsAccountName (optional)
@@ -336,12 +336,12 @@ Retrieve a list of configured Kayenta accounts
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.V2CanaryControllerApi()
+api_instance = spinnaker_swagger_client.V2CanaryControllerApi()
 
 try:
     # Retrieve a list of configured Kayenta accounts
@@ -378,12 +378,12 @@ Retrieve a list of all configured canary judges
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.V2CanaryControllerApi()
+api_instance = spinnaker_swagger_client.V2CanaryControllerApi()
 
 try:
     # Retrieve a list of all configured canary judges
@@ -420,12 +420,12 @@ Retrieve a list of descriptors for use in populating the canary config ui
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.V2CanaryControllerApi()
+api_instance = spinnaker_swagger_client.V2CanaryControllerApi()
 filter = 'filter_example' # str | filter (optional)
 metrics_account_name = 'metrics_account_name_example' # str | metricsAccountName (optional)
 

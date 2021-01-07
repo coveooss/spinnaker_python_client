@@ -1,4 +1,4 @@
-# spinnaker_client.CredentialsControllerApi
+# spinnaker_swagger_client.CredentialsControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -17,12 +17,12 @@ Retrieve an account's details
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.CredentialsControllerApi()
+api_instance = spinnaker_swagger_client.CredentialsControllerApi()
 account = 'account_example' # str | account
 x_rate_limit_app = 'x_rate_limit_app_example' # str | X-RateLimit-App (optional)
 account_non_expired = true # bool |  (optional)
@@ -89,12 +89,12 @@ Retrieve a list of accounts
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.CredentialsControllerApi()
+api_instance = spinnaker_swagger_client.CredentialsControllerApi()
 account_non_expired = true # bool |  (optional)
 account_non_locked = true # bool |  (optional)
 allowed_accounts = ['allowed_accounts_example'] # list[str] |  (optional)

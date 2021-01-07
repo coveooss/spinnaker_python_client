@@ -1,4 +1,4 @@
-# spinnaker_client.ApplicationControllerApi
+# spinnaker_swagger_client.ApplicationControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -30,12 +30,12 @@ Cancel pipeline
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ApplicationControllerApi()
+api_instance = spinnaker_swagger_client.ApplicationControllerApi()
 id = 'id_example' # str | id
 reason = 'reason_example' # str | reason (optional)
 
@@ -78,12 +78,12 @@ Cancel task
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ApplicationControllerApi()
+api_instance = spinnaker_swagger_client.ApplicationControllerApi()
 id = 'id_example' # str | id
 
 try:
@@ -124,12 +124,12 @@ Retrieve a list of applications
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ApplicationControllerApi()
+api_instance = spinnaker_swagger_client.ApplicationControllerApi()
 account = 'account_example' # str | filters results to only include applications deployed in the specified account (optional)
 owner = 'owner_example' # str | filters results to only include applications owned by the specified email (optional)
 
@@ -172,12 +172,12 @@ Retrieve a list of an application's configuration revision history
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ApplicationControllerApi()
+api_instance = spinnaker_swagger_client.ApplicationControllerApi()
 application = 'application_example' # str | application
 limit = 20 # int | limit (optional) (default to 20)
 
@@ -220,12 +220,12 @@ Retrieve an application's details
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ApplicationControllerApi()
+api_instance = spinnaker_swagger_client.ApplicationControllerApi()
 application = 'application_example' # str | application
 expand = true # bool | expand (optional) (default to true)
 
@@ -268,12 +268,12 @@ Retrieve a pipeline configuration
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ApplicationControllerApi()
+api_instance = spinnaker_swagger_client.ApplicationControllerApi()
 application = 'application_example' # str | application
 pipeline_name = 'pipeline_name_example' # str | pipelineName
 
@@ -316,12 +316,12 @@ Retrieve a list of an application's pipeline configurations
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ApplicationControllerApi()
+api_instance = spinnaker_swagger_client.ApplicationControllerApi()
 application = 'application_example' # str | application
 
 try:
@@ -362,12 +362,12 @@ Retrieve a list of an application's pipeline executions
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ApplicationControllerApi()
+api_instance = spinnaker_swagger_client.ApplicationControllerApi()
 application = 'application_example' # str | application
 expand = true # bool | expand (optional)
 limit = 56 # int | limit (optional)
@@ -414,12 +414,12 @@ Retrieve a pipeline strategy configuration
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ApplicationControllerApi()
+api_instance = spinnaker_swagger_client.ApplicationControllerApi()
 application = 'application_example' # str | application
 strategy_name = 'strategy_name_example' # str | strategyName
 
@@ -462,12 +462,12 @@ Retrieve a list of an application's pipeline strategy configurations
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ApplicationControllerApi()
+api_instance = spinnaker_swagger_client.ApplicationControllerApi()
 application = 'application_example' # str | application
 
 try:
@@ -508,12 +508,12 @@ Get task details
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ApplicationControllerApi()
+api_instance = spinnaker_swagger_client.ApplicationControllerApi()
 id = 'id_example' # str | id
 task_details_id = 'task_details_id_example' # str | taskDetailsId
 x_rate_limit_app = 'x_rate_limit_app_example' # str | X-RateLimit-App (optional)
@@ -558,12 +558,12 @@ Get task
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ApplicationControllerApi()
+api_instance = spinnaker_swagger_client.ApplicationControllerApi()
 id = 'id_example' # str | id
 
 try:
@@ -604,12 +604,12 @@ Retrieve a list of an application's tasks
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ApplicationControllerApi()
+api_instance = spinnaker_swagger_client.ApplicationControllerApi()
 application = 'application_example' # str | application
 limit = 56 # int | limit (optional)
 page = 56 # int | page (optional)
@@ -656,12 +656,12 @@ Invoke pipeline config
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ApplicationControllerApi()
+api_instance = spinnaker_swagger_client.ApplicationControllerApi()
 application = 'application_example' # str | application
 pipeline_name = 'pipeline_name_example' # str | pipelineName
 trigger = NULL # object | trigger (optional)
@@ -708,12 +708,12 @@ Create task
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.ApplicationControllerApi()
+api_instance = spinnaker_swagger_client.ApplicationControllerApi()
 application = 'application_example' # str | application
 map = NULL # object | map
 

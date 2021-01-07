@@ -1,4 +1,4 @@
-# spinnaker_client.PluginsInstalledControllerApi
+# spinnaker_swagger_client.PluginsInstalledControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -16,12 +16,12 @@ Get all installed Spinnaker plugins
 ```python
 from __future__ import print_function
 import time
-import spinnaker_client
-from spinnaker_client.rest import ApiException
+import spinnaker_swagger_client
+from spinnaker_swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = spinnaker_client.PluginsInstalledControllerApi()
+api_instance = spinnaker_swagger_client.PluginsInstalledControllerApi()
 service = 'service_example' # str | service (optional)
 
 try:
